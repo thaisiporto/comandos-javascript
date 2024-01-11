@@ -43,22 +43,25 @@
             <div class="comando">
                 <p><code>varName.style.color = "#3a4669";</code></p>
                 <p>Muda a cor do texto do objeto.</p>
-                <input type="button" value="Testar Comando" onclick="corTexto()" class="botaoTeste">
+
                 <p id="corTextoTeste" class="pDeTestes" onclick="voltarTextoCor()">Esse texto vai mudar de cor!</p>
+                <input type="button" value="Testar Comando" onclick="corTexto()" class="botaoTeste">
             </div>
 
             <div class="comando">
                 <p><code>varName.style.background = "#3a4669";</code></p>
                 <p>Muda a cor de fundo do elemento.</p>
-                <input type="button" value="Testar Comando" onclick="corFundo()" class="botaoTeste">
+
                 <p id="corFundoTeste" class="pDeTestes" onclick="voltarFundo()">O fundo desse texto vai mudar de cor!</p>
+                <input type="button" value="Testar Comando" onclick="corFundo()" class="botaoTeste">
             </div>
 
             <div class="comando">
                 <p><code>varName.innerText = "Mudou!";</code></p>
                 <p>Adiciona ou muda o texto do objeto.</p>
-                <input type="button" value="Testar Comando" onclick="mudarTexto()" class="botaoTeste">
+
                 <p id="mudandoTexto" class="pDeTestes" onclick="voltarTexto()">Esse texto vai mudar!</p>
+                <input type="button" value="Testar Comando" onclick="mudarTexto()" class="botaoTeste">
             </div>
 
             <div class="comando">
@@ -66,10 +69,10 @@
                 <p><code>varName.toLowerCase();</code></p>
                 <p>Transforma o texto em maiúsculas ou minúsculas (respectivamente).</p>
 
+                <p id="maiusMinus" class="pDeTestes" onclick="textoNormal()">Esse Texto Vai Se Transformar!</p>
+
                 <input type="button" value="Maiúsculas" onclick="maius()" class="botaoTeste">
                 <input type="button" value="Minúsculas" onclick="minus()" class="botaoTeste">
-
-                <p id="maiusMinus" class="pDeTestes" onclick="textoNormal()">Esse Texto Vai Mudar!</p>
             </div>
 
             <div class="comando">
@@ -79,7 +82,7 @@
                 <input type="text" name="textoTamanho" id="iTextoTamanho" placeholder="Digite um texto" maxlength="35">
                 <input type="button" value="Enviar" onclick="contarLetras()" class="botaoTeste">
 
-                <p id="letrasContadas" class="pDeTestes" onclick="quantasLetras()">Quantas letras palavra tem?</p>
+                <p id="letrasContadas" class="pDeTestes" onclick="quantasLetras()">Quantas letras o texto tem?</p>
             </div>
         </div>
     </main>
