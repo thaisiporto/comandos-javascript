@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style2.css">
+    <title>Scripts</title>
+</head>
+<body>
+    <header>
+        <h1>Javascript</h1>
+        <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+    </header>
+    <main>
+        <div>
+            <h1>Comandos Básicos</h1>
+            <p>Alguns comandos em Javascript conforme vão sendo aprendidos.</p>
+
+            <div class="comando">
+                <p><code>window.alert("Essa é uma mensagem de <strong>Alerta</strong>!");</code></p>
+                <p>Esse comando abre uma janela de alerta na página.</p>
+                <input type="button" value="Testar Comando" onclick="alerta()" class="botaoTeste">
+            </div>
+
+            <div class="comando">
+                <p><code>window.alert("Essa é uma mensagem de <strong>Confirmaçao</strong>!");</code></p>
+                <p>Esse comando abre uma janela de confirmação na página.</p>
+                <input type="button" value="Testar Comando" onclick="confirma()" class="botaoTeste">
+            </div>
+
+            <div class="comando">
+                <p><code>window.prompt("Qual é seu nome?");</code></p>
+                <p>Esse comando abre uma janela com um <em>input</em> para entrada de texto.</p>
+                <input type="button" value="Testar Comando" onclick="entradaTexto()" class="botaoTeste">
+                <p id="promptTeste" class="pDeTestes"></p>
+            </div>
+
+            <div class="comando">
+                <p><code>varName.style.color = "#3a4669";</code></p>
+                <p>Muda a cor do texto do objeto.</p>
+                <input type="button" value="Testar Comando" onclick="corTexto()" class="botaoTeste">
+                <p id="corTextoTeste" class="pDeTestes" onclick="voltarTextoCor()">Esse texto vai mudar de cor!</p>
+            </div>
+
+            <div class="comando">
+                <p><code>varName.style.background = "#3a4669";</code></p>
+                <p>Muda a cor de fundo do elemento.</p>
+                <input type="button" value="Testar Comando" onclick="corFundo()" class="botaoTeste">
+                <p id="corFundoTeste" class="pDeTestes" onclick="voltarFundo()">O fundo desse texto vai mudar de cor!</p>
+            </div>
+
+            <div class="comando">
+                <p><code>varName.innerText = "Mudou!";</code></p>
+                <p>Adiciona ou muda o texto do objeto.</p>
+                <input type="button" value="Testar Comando" onclick="mudarTexto()" class="botaoTeste">
+                <p id="mudandoTexto" class="pDeTestes" onclick="voltarTexto()">Esse texto vai mudar!</p>
+            </div>
+
+            <div class="comando">
+                <p><code>varName.toUpperCase();</code></p>
+                <p><code>varName.toLowerCase();</code></p>
+                <p>Transforma o texto em maiúsculas ou minúsculas (respectivamente).</p>
+
+                <input type="button" value="Maiúsculas" onclick="maius()" class="botaoTeste">
+                <input type="button" value="Minúsculas" onclick="minus()" class="botaoTeste">
+
+                <p id="maiusMinus" class="pDeTestes" onclick="textoNormal()">Esse Texto Vai Mudar!</p>
+            </div>
+
+            <div class="comando">
+                <p><code>varName.length;</code></p>
+                <p>Conta quantos caracteres o texto possui.</p>
+
+                <input type="text" name="textoTamanho" id="iTextoTamanho" placeholder="Digite um texto" maxlength="35">
+                <input type="button" value="Enviar" onclick="contarLetras()" class="botaoTeste">
+
+                <p id="letrasContadas" class="pDeTestes" onclick="quantasLetras()">Quantas letras palavra tem?</p>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        
+    </script>
+</body>
+<script src="scripts/myscript.js"></script>
+</html>

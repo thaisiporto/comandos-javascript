@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    color: #3a4669;
+    background-color: #ffc0cb;
+}
+
+header {
+    background-color: #e6687d;
+    text-align: center;
+    padding: 40px 15px;
+    border-bottom: 10px solid #3a4669;
+    color: #fff;
+    display: none;
+}
+
+header h1 {
+    color: #fff;
+    font-family: 'Anonymous Pro', monospace;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.2em;
+}
+
+header li {
+    display: inline-block;
+    background-color: #fff;
+    color: #e6687d;
+    padding: 5px 10px;
+    margin-top: 15px;
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    border-right: 2px solid #f88fa0;
+    border-left: 2px solid #f88fa0;
+    box-shadow: 0 0 5px #2b34527c;
+}
+
+h1 {
+    color: #f88fa0;
+    padding: 10px 0;
+}
+
+p {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+div.comando {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #f88fa0;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+input.botaoTeste {
+    background-color: #ffc0cb;
+    color: #3a4669;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f88fa0;
+}
+
+input.botaoTeste:hover {
+    background-color: #f88fa0;
+    color: #2b3452;
+    cursor: pointer;
+}
+
+div.comando p, input {
+    margin: 10px auto;
+    font-size: 14px;
+}
+
+p.pDeTestes {
+    background-color: #eee;
+    color: #e6687d;
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+p#promptTeste {
+    margin: 0 auto;
+    display: block;
+}
+
+div.comando code {
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+input#iTextoTamanho {
+    height: 36px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
