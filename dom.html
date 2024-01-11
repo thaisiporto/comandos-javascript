@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style-all.css">
+    <link rel="stylesheet" href="styles/style-dom.css">
+    <title>Introdução ao DOM</title>
+</head>
+<body>
+    <main>
+        <h1>DOM: Document Object Model</h1>
+        <h2>O que é DOM?</h2>
+        <p>É a interface entre os objetos do HTML e a linguagem Javascript.</p>
+        <p>Ele fornece uma representação estruturada do documento como uma árvore. O DOM define métodos que permitem acesso à árvore, para que eles possam alterar a estrutura, estilo e conteúdo do documento. Fonte: <a href="https://developer.mozilla.org/pt-BR/docs/Web/API/Document_Object_Model" target="_blank">MDN Web Docs</a>.</p>
+        <p>Existem tipos de objetos, como:</p>
+            <ul id="tipoObjeto">
+                <li><strong><code>location.</code></strong> <span>localização do site, url, páginas navegadas.</span></li>
+                <li><strong><code>document.</code></strong> <span>documento atual.</span></li>
+                <li><strong><code>history.</code></strong> <span>histórico.</span></li>
+            </ul>
+        <h3>Árvore DOM</h3>
+        <figure>
+            <img src="images/dom-tree.png" alt="Árvore DOM">
+        </figure>
+        <p>O objeto imediatamente abaixo de outro, é chamado de <em>Child</em> desse objeto.
+        <code>&lt;body&gt;</code> é child de <code>&lt;html&gt;</code>.<br>
+        O objeto imediatamente acima de outro, é chamado de <em>Parent</em> desse objeto.
+        <code>&lt;html&gt;</code> é parent de <code>&lt;body&gt;</code>.</p>
+        </p>
+
+        <h2>Acessando Objetos</h2>
+        <p>É possível acessar esses objetos com javascript das seguintes formas:</p>
+            <div class="comando">
+                <p><strong><code>.getElementsByTagName</code></strong></p>
+                <p>Acessa o objeto através da <em>TAG</em>.</p>
+                <p><strong><code>const primeiroParagrafo = window.document.getElementsByTagName("p")[0];</code></strong></p>
+                <p>Sendo ("p") a tag que será acessada e [n] o número (na ordem) de qual das tags p está sendo acessada (começando por zero).</p>
+            </div>
+
+            <div class="comando">
+                <p><strong><code>.getElementById</code></strong></p>
+                <p>Acessa o objeto através do <em>ID</em> definido.</p>
+                <p><strong><code>
+                    &lt;p <em>id="texto"</em>&gt Parágrafo &lt;/p&gt &nbsp;<br>
+                    &nbsp; const textoI = window.document.getElementById(<em>"texto"</em>);
+                </code></strong></p>
+            </div>
+
+            <div class="comando">
+                <p><strong><code>.getElementsByClassName</code></strong></p>
+                <p>Acessa o objeto através da <em>CLASSE</em> definida.</p>
+                <p><strong><code>
+                    &lt;p <em>class="texto"</em>&gt Parágrafo &lt;/p&gt; &nbsp;<br>
+                    &nbsp; const textoCN = window.document.getElementsByClassName(<em>"texto"</em>);
+                </code></strong></p>
+            </div>
+
+            <div class="comando">
+                <p><strong><code>.getElementsByName</code></strong></p>
+                <p>Acessa o objeto através do <em>NOME</em> definido.</p>
+                <p><strong><code>
+                    &lt;p <em>name="texto"</em>&gt Parágrafo &lt;/p&gt; &nbsp;<br>
+                    &nbsp; const textoN = window.document.getElementsByName(<em>"texto"</em>);
+                </code></strong></p>
+            </div>
+
+            <div class="comando">
+                <p><strong><code>.querySelector</code></strong></p>
+                <p>acessa o primeiro objeto encontrado com o <em>seletor CSS</em> definido. É uma tecnologia mais recente, por isso pode não ser aceita por todos os navegadores.</p>
+                <p><strong><code>
+                    &lt;p <em>id="texto"</em>&gt Parágrafo &lt;/p&gt &nbsp;<br>
+                    &nbsp; const textoQS = window.document.querySelector(<em>"p#texto"</em>);;
+                </code></strong></p>
+            </div>
+
+        <h2>Executando Comandos</h3>
+            <div class="comando">
+                <p><strong><code>window.document.getElementById("texto").style.color = "#3a4669";</code></strong></p>
+                <p id="corTextoTeste" class="pDeTestes" onclick="voltarTextoCor()">Esse texto vai mudar de cor!</p>
+                <input type="button" value="Testar Comando" onclick="corTexto()" class="botaoTeste">
+            </div>
+
+        <h2>Eventos DOM</h2>
+        <p>Os eventos são notificações de código que adicionam interatividade a interface.</p>
+            <h3>Tipos de Eventos</h3>
+            <ul>
+                <li>mouseenter</li>
+                <li>mousemove</li>
+                <li>mousedown</li>
+                <li>mouseup</li>
+                <li>click</li>
+                <li>mouseout</li>
+            </ul>
+            <p><a href="https://developer.mozilla.org/en-US/docs/Web/Events#event_index" target="_blank">Lista de Eventos da MDN Web Docs</a></p>
+
+            <h3>Funções</h3>
+            <p><strong>Funções (function): </strong>comandos executados somente quando eventos DOM forem ativados</p>
+            <p>Funções devem receber nomes:</p>
+            <div class="eventoDOM"><code>function nomeDaAcao(parametros adicionais) { <em>bloco</em> }</code></div>
+            <p><strong>Bloco:</strong> conjunto de linhas que formam um comando, delimitado por chaves <code>{}</code>.</p>
+
+            <h3>Adicionando Eventos</h3>
+            <p>Funções podem ser adicionadas no html ou no script.</p>
+            <div class="eventoDOM">
+                <h3>No html:</h3>
+                <p>
+                    <code>&lt;p id="cliqueAqui" onclick="clicar()"&gt;Clique aqui!&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp; var clck = window.document.querySelector("p#cliqueAqui");<br>
+                        &nbsp; function clicar() {<br>
+                            &nbsp; &nbsp; clck.innerText = "Clicou!";<br>
+                            &nbsp; &nbsp; clck.style.background = "#7c9cc7";<br>
+                        &nbsp; }<br>
+                        &nbsp;&lt;/script&gt;<br>
+                    </code>
+                </p>
+                <p class="cliqueAqui" id="add1" onclick="clicar()" ondblclick="dClicar()">Clique aqui!</p>
+            </div>
+            <div class="eventoDOM">
+            <h3>No script:</h3>
+            <p>
+                <code>&lt;p id="cliqueAqui"&gt;Clique aqui!&lt;/p&gt;</code>
+            </p>
+            <p>
+                <code>
+                    &lt;script&gt;<br>
+                    &nbsp; var clck = window.document.querySelector("p#cliqueAqui");<br>
+                    &nbsp; clck.addEventListener("click", clicar); <br>
+                    &nbsp; function clicar() {<br>
+                        &nbsp; &nbsp; clck.innerText = "Clicou!";<br>
+                        &nbsp; &nbsp; clck.style.background = "#ffc0cb";<br>
+                    &nbsp; }<br>
+                    &nbsp;&lt;/script&gt;<br>
+                </code>
+            </p>
+            <p class="cliqueAqui" id="add2">Clique aqui!</p>
+        </div>
+
+
+        <p><a href="comandos.html">> Comandos</a></p>
+    </main>
+</body>
+<script src="scripts/scripts-dom.js"></script>
+</html>

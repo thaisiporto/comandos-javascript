@@ -4,18 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style2.css">
-    <title>Scripts</title>
+    <link rel="stylesheet" href="styles/style-all.css">
+    <link rel="stylesheet" href="styles/style-comandos.css">
+    <title>Comandos Básicos</title>
 </head>
 <body>
-    <header>
-        <h1>Javascript</h1>
-        <ul>
-            <li>Link</li>
-            <li>Link</li>
-            <li>Link</li>
-        </ul>
-    </header>
     <main>
         <div>
             <h1>Comandos Básicos</h1>
@@ -28,7 +21,7 @@
             </div>
 
             <div class="comando">
-                <p><code>window.alert("Essa é uma mensagem de <strong>Confirmaçao</strong>!");</code></p>
+                <p><code>window.confirm("Essa é uma mensagem de <strong>Confirmaçao</strong>!");</code></p>
                 <p>Esse comando abre uma janela de confirmação na página.</p>
                 <input type="button" value="Testar Comando" onclick="confirma()" class="botaoTeste">
             </div>
@@ -62,6 +55,9 @@
 
                 <p id="mudandoTexto" class="pDeTestes" onclick="voltarTexto()">Esse texto vai mudar!</p>
                 <input type="button" value="Testar Comando" onclick="mudarTexto()" class="botaoTeste">
+
+                <p><strong>innerText </strong>Acessa o texto sem as childs (sem formatação).<br>
+                <strong>innetHTML</strong> Acessa as tags de formatação.</p>
             </div>
 
             <div class="comando">
@@ -85,11 +81,8 @@
                 <p id="letrasContadas" class="pDeTestes" onclick="quantasLetras()">Quantas letras o texto tem?</p>
             </div>
         </div>
+        <p><a href="dom.html">> Introdução ao DOM</a></p>
     </main>
-    
-    <script>
-        
-    </script>
 </body>
-<script src="scripts/myscript.js"></script>
+<script src="scripts/scripts-comandos.js"></script>
 </html>

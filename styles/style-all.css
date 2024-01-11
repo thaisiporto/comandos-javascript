@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans';
+    color: #3a4669;
+    background-color: #ffc0cb;
+}
+
+main {
+    padding: 0 20px 30px 20px;
+    background-color: #ffffff;
+    max-width: 700px;
+    margin: auto;
+    border-top: 10px solid #7c9cc7;
+    border-right: 2px solid #f88fa0;
+    border-left: 2px solid #f88fa0;
+    box-shadow: 0 0 5px #2b34527c;
+}
+
+h1 {
+    background-color: #f88fa0;
+    padding: 10px 30px;
+    font-size: 1.7em;
+    margin: 0 -20px 20px -20px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h1:hover::after, h2:hover::after, h3:hover::after {
+    content: "_";
+}
+
+p {
+    font-size: 14px;
+    padding: 10px;
+    text-align: justify;
+}
+
+div.comando, div.eventoDOM {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #f88fa0;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+div.comando p, input {
+    margin: 10px auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+input.botaoTeste {
+    background-color: #ffc0cb;
+    color: #3a4669;
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f88fa0;
+}
+
+input.botaoTeste:hover {
+    background-color: #f88fa0;
+    color: #2b3452;
+    cursor: pointer;
+}
+
+div.comando code, div.eventoDOM code {
+    font-family: 'Anonymous Pro', monospace;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+p.pDeTestes {
+    background-color: #eee;
+    color: #e6687d;
+    font-size: 0.8em;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ul {
+    padding-left: 40px;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+ul li span {
+    font-size: 0.9em;
+}
+
+main figure {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+main img {
+    width: 100%;
+}
+
+main h2 {
+    color: #7c9cc7;
+    margin: 20px 0;
+    font-size: 1.3em;
+    margin-left: 20px;
+}
+
+main h3 {
+    color: #3a4669;
+    margin: 20px 0;
+    font-size: 1.1em;
+    margin-left: 20px;
+}
+
+main a {
+    color: #f88fa0;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
