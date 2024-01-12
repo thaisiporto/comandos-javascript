@@ -35,7 +35,7 @@
             <div class="comando">
                 <p><strong><code>.getElementsByTagName</code></strong></p>
                 <p>Acessa o objeto através da <em>TAG</em>.</p>
-                <p><strong><code>const primeiroParagrafo = window.document.getElementsByTagName("p")[0];</code></strong></p>
+                <p><strong><code>const primeiroParagrafo = window.document.<br class="breakCode">getElementsByTagName("p")[0];</code></strong></p>
                 <p>Sendo ("p") a tag que será acessada e [n] o número (na ordem) de qual das tags p está sendo acessada (começando por zero).</p>
             </div>
 
@@ -44,7 +44,7 @@
                 <p>Acessa o objeto através do <em>ID</em> definido.</p>
                 <p><strong><code>
                     &lt;p <em>id="texto"</em>&gt Parágrafo &lt;/p&gt &nbsp;<br>
-                    &nbsp; const textoI = window.document.getElementById(<em>"texto"</em>);
+                    &nbsp; const textoI = window.document.<br class="breakCode">getElementById(<em>"texto"</em>);
                 </code></strong></p>
             </div>
 
@@ -53,7 +53,7 @@
                 <p>Acessa o objeto através da <em>CLASSE</em> definida.</p>
                 <p><strong><code>
                     &lt;p <em>class="texto"</em>&gt Parágrafo &lt;/p&gt; &nbsp;<br>
-                    &nbsp; const textoCN = window.document.getElementsByClassName(<em>"texto"</em>);
+                    &nbsp; const textoCN = window.document.<br class="breakCode">getElementsByClassName(<em>"texto"</em>);
                 </code></strong></p>
             </div>
 
@@ -62,7 +62,7 @@
                 <p>Acessa o objeto através do <em>NOME</em> definido.</p>
                 <p><strong><code>
                     &lt;p <em>name="texto"</em>&gt Parágrafo &lt;/p&gt; &nbsp;<br>
-                    &nbsp; const textoN = window.document.getElementsByName(<em>"texto"</em>);
+                    &nbsp; const textoN = window.document.<br class="breakCode">getElementsByName(<em>"texto"</em>);
                 </code></strong></p>
             </div>
 
@@ -71,13 +71,13 @@
                 <p>acessa o primeiro objeto encontrado com o <em>seletor CSS</em> definido. É uma tecnologia mais recente, por isso pode não ser aceita por todos os navegadores.</p>
                 <p><strong><code>
                     &lt;p <em>id="texto"</em>&gt Parágrafo &lt;/p&gt &nbsp;<br>
-                    &nbsp; const textoQS = window.document.querySelector(<em>"p#texto"</em>);;
+                    &nbsp; const textoQS = window.document.<br class="breakCode">querySelector(<em>"p#texto"</em>);;
                 </code></strong></p>
             </div>
 
         <h2>Executando Comandos</h3>
             <div class="comando">
-                <p><strong><code>window.document.getElementById("texto").style.color = "#3a4669";</code></strong></p>
+                <p><strong><code>window.document.<br class="breakCode">getElementById("texto").style.color = "#3a4669";</code></strong></p>
                 <p id="corTextoTeste" class="pDeTestes" onclick="voltarTextoCor()">Esse texto vai mudar de cor!</p>
                 <input type="button" value="Testar Comando" onclick="corTexto()" class="botaoTeste">
             </div>
@@ -106,12 +106,12 @@
             <div class="eventoDOM">
                 <h3>No html:</h3>
                 <p>
-                    <code>&lt;p id="cliqueAqui" onclick="clicar()"&gt;Clique aqui!&lt;/p&gt;</code>
+                    <code>&lt;p id="cliqueAqui" <br class="breakCode">onclick="clicar()"&gt;Clique aqui!&lt;/p&gt;</code>
                 </p>
                 <p>
                     <code>
                         &lt;script&gt;<br>
-                        &nbsp; var clck = window.document.querySelector("p#cliqueAqui");<br>
+                        &nbsp; var clck = window.document.<br class="breakCode">querySelector("p#cliqueAqui");<br>
                         &nbsp; function clicar() {<br>
                             &nbsp; &nbsp; clck.innerText = "Clicou!";<br>
                             &nbsp; &nbsp; clck.style.background = "#7c9cc7";<br>
@@ -129,7 +129,7 @@
             <p>
                 <code>
                     &lt;script&gt;<br>
-                    &nbsp; var clck = window.document.querySelector("p#cliqueAqui");<br>
+                    &nbsp; var clck = window.document.<br class="breakCode">querySelector("p#cliqueAqui");<br>
                     &nbsp; clck.addEventListener("click", clicar); <br>
                     &nbsp; function clicar() {<br>
                         &nbsp; &nbsp; clck.innerText = "Clicou!";<br>
@@ -142,7 +142,7 @@
         </div>
 
 
-        <p><a href="index.html">> Comandos</a></p>
+        <p><a href="comandos.html">> Comandos</a></p>
     </main>
 </body>
 <script src="scripts/scripts-dom.js"></script>
