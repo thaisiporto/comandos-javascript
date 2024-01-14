@@ -4,6 +4,16 @@
 
 /* Página DOM */
 
+:root {
+    --amarelo: #fad712;
+    --amareloClaro:#fdf5b8;
+    --amareloEscuro: #c4af11;
+    --azulClaro: #7c9cc7;
+    --azul: #24668d;
+    --azulEscuro: #2b3452;
+
+}
+
 p.cliqueAqui {
     display: inline-block;
     font-size: 0.9em;
@@ -15,10 +25,10 @@ p.cliqueAqui {
 }
 
 p#add1 {
-    background-color: #fdf5b8;
+    background-color: var(--amareloClaro);
 }
 
 p#add2 {
-    background-color: #7c9cc7;
+    background-color: var(--azulClaro);
 }
 

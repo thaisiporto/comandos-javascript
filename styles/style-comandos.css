@@ -2,10 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+:root {
+    --amarelo: #fad712;
+    --amareloClaro:#fdf5b8;
+    --amareloEscuro: #c4af11;
+    --azulClaro: #7c9cc7;
+    --azul: #24668d;
+    --azulEscuro: #2b3452;
+}
+
 /* Página Comandos */
 p.pDeTestes {
     background-color: #eee;
-    color: #c4af11;
+    color: var(--amareloEscuro);
     font-size: 0.8em;
     margin: 0 auto;
     padding: 5px 10px;
