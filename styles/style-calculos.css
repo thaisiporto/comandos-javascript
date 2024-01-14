@@ -23,24 +23,24 @@ input.inputCalc {
 }
 
 input.botaoRes {
-    background-color: #ffc0cb;
+    background-color: #fdf5b8;
     color: #3a4669;
     border: none;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    border-bottom: 2px solid #f88fa0;
+    border-bottom: 2px solid #f7df1e;
 }
 
 input.botaoRes:hover {
-    background-color: #f88fa0;
+    background-color: #f7df1e;
     color: #2b3452;
     cursor: pointer;
 }
 
 p.resultado {
     background-color: #eee;
-    color: #e6687d;
+    color: #c4af11;
     font-size: 0.9em;
     margin: 0 auto;
     padding: 5px 10px;
