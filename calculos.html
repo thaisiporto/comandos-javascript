@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style-all.css">
+    <link rel="stylesheet" href="styles/style-calculos.css">
+    <title>Cálculos Básicos</title>
+</head>
+<body>
+    <main>
+        <h1>Cálculos</h1>
+        <p>Símbolos usados para realizar cálculos</p>
+            <ul>
+                <li><strong class="simbolo">+</strong> Soma</li>
+                <li><strong class="simbolo">-</strong> Subtração</li>
+                <li><strong class="simbolo">*</strong> Multiplicação</li>
+                <li><strong class="simbolo">/</strong> Divisão</li>
+            </ul>
+
+        <div class="comando"> <!-- Acessando Valores -->
+            <h2>Acessando valores</h2>
+            <p>Os valores podem ser acessados através de inputs.</p>
+            <p>
+                <code>
+                    &lt;input type="number" id="iNumb1"&gt;<br>
+                    &lt;input type="number" id="iNumb2"&gt;<br>
+                </code>
+            <p>Então os valores então são acessados via javascript.</p>
+            <p>
+                <code>
+                    <strong>var numero1</strong> = window.document.<br class="breakCode">querySelector(<strong>"input#iNumb1"</strong>); &nbsp; <br>
+                    <br class="breakCode">
+                    &nbsp;  <strong>var numero2</strong> = window.document.<br class="breakCode">querySelector(<strong>"input#iNumb2"</strong>);
+                </code>
+            </p>
+
+        </div>
+
+        <div class="comando"> <!-- Soma -->
+            <h2>Adição</h2>
+            <p>
+                <code>
+                    var soma = numero1 + numero2;<br>
+                </code>
+            </p>
+
+            <input type="number" name="soma1" id="iSoma1" class="inputCalc"> <strong>+</strong> 
+            <input type="number" name="soma2" id="iSoma2" class="inputCalc">
+            <input type="button" value="Somar" onclick="somar()" id="botaoSoma" class="botaoRes">
+            <p id="resSoma" class="resultado">Resultado da Soma</p>
+
+        </div>
+
+        <div class="comando"> <!-- Subtração -->
+            <h2>Subtração</h2>
+            <p>
+                <code>
+                    var subtracao = numero1 - numero2;<br>
+                </code>
+            </p>
+       
+            <input type="number" name="numbSub1" id="iNumbSub1" class="inputCalc"> <strong>-</strong> 
+            <input type="number" name="numbSub2" id="iNumbSub2" class="inputCalc">
+            <input type="button" value="Subtrair" onclick="subtrair()" id="botaoSubtracao" class="botaoRes">
+            <p id="resSubtracao" class="resultado">Resultado da Subtração</p>
+
+        </div>
+
+        <div class="comando"> <!-- Multiplicação -->
+            <h2>Multiplicação</h2>
+            <p>
+                <code>
+                    var multiplicacao = numero1 * numero2;<br>
+                </code>
+            </p>
+       
+            <input type="number" name="numbMult1" id="iNumbMult1" class="inputCalc"> <strong>x</strong> 
+            <input type="number" name="numbMult2" id="iNumbMult2" class="inputCalc">
+            <input type="button" value="Multiplicar" onclick="multiplicar()" id="botaoMultiplicacao" class="botaoRes">
+            <p id="resMultiplicacao" class="resultado">Resultado da Multiplicação</p>
+
+        </div>
+
+        
+        <div class="comando"> <!-- Divisão -->
+            <h2>Divisão</h2>
+            <p>
+                <code>
+                    var divisao = numero1 / numero2;<br>
+                </code>
+            </p>
+       
+            <input type="number" name="numbDiv1" id="iNumbDiv1" class="inputCalc"> <strong>&#247;</strong> 
+            <input type="number" name="numbDiv2" id="iNumbDiv2" class="inputCalc">
+            <input type="button" value="Dividir" onclick="dividir()" id="botaoDivisao" class="botaoRes">
+            <p id="resDivisão" class="resultado">Resultado da Divisão</p>
+
+        </div>
+
+        <p>Alguns inputs ou entradas de valores, acabam convertendo os números em strings (ou strings em números). Nessas ocasiões, é possível converte-los.</p>
+        
+        <div class="comando"> <!-- Converter para string -->
+            <h2>Convertendo Valor para String</h2>
+            <p>
+                <code>var strin1 = String(input1.value);</code><br>
+                <span>ou</span>
+                <code>
+                var strin2 = input2.value.toString();
+                </code>
+            </p>
+            <p>Cálculo:</p>
+            <p>
+                <code>
+                    var soma = strin1 + strin2;<br>
+                </code>
+            </p>
+
+            <input type="text" name="nConvert1" id="iNConvert1" class="inputCalc"> <strong>+</strong> 
+            <input type="text" name="nConvert2" id="iNConvert2" class="inputCalc">
+            <input type="button" value="Somar" onclick="somarSemConvert()" id="botaoNConvert" class="botaoRes">
+            <p id="resNConvert" class="resultado">Resultado da Soma</p>
+        </div>
+
+        <div class="comando"> <!-- Converter para número -->
+            <h2>Convertendo Valor para Número</h2>
+            <p><code>var num1 = Number.parseInt(input1.value)</code><br>
+            <span>Converte a string em número inteiro.</span></p>
+
+            <p><code>var num2 = Number.parseFloat(input2.value)</code><br>
+            <span>Converte a string número real.</span></p>
+
+            <p><code>var num1 = Number(input1.value); &nbsp;<br>&nbsp; var num2 = Number(input2.value);</code><br>
+            <span>Deixa o programa decidir qual tipo de número é.</span></p>
+            <p>Cálculo:</p>
+            <p>
+                <code>
+                    var soma = num1 + num2;<br>
+                </code>
+            </p>
+
+            <input type="number" name="soma12" id="iSoma12" class="inputCalc"> <strong>+</strong> 
+            <input type="number" name="soma22" id="iSoma22" class="inputCalc">
+            <input type="button" value="Somar" onclick="somar2()" id="botaoSoma2" class="botaoRes">
+            <p id="resSoma2" class="resultado">Resultado da Soma</p>
+
+        </div>
+
+        <p id="links"><a href="dom.html">> Introdução ao DOM</a>&nbsp; &#128900; &nbsp;<a href="comandos.html">> Comandos</a></p>
+    </main>
+
+    <script>
+
+    </script>
+
+</body>
+<script src="scripts/scripts-calculos.js"></script>
+</html>
