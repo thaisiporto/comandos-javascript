@@ -129,6 +129,10 @@ main h3 {
     margin-left: 20px;
 }
 
+main p#links {
+    text-align: center;
+}
+
 main a {
     color: #f88fa0;
     text-decoration: none;
