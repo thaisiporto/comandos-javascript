@@ -5,13 +5,12 @@
 /* Página DOM */
 
 :root {
-    --amarelo: #fad712;
-    --amareloClaro:#fdf5b8;
-    --amareloEscuro: #c4af11;
+    --rosaClaro:#ffc0cb;
+    --rosa: #f88fa0;
+    --rosaEscuro: #e6687d;
     --azulClaro: #7c9cc7;
-    --azul: #24668d;
+    --azul: #1f74a5;
     --azulEscuro: #2b3452;
-
 }
 
 p.cliqueAqui {
@@ -25,7 +24,7 @@ p.cliqueAqui {
 }
 
 p#add1 {
-    background-color: var(--amareloClaro);
+    background-color: var(--rosaClaro);
 }
 
 p#add2 {

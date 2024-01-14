@@ -22,7 +22,7 @@ function corTexto() {
 }
 function voltarTextoCor() {
     var voltarCorT = window.document.getElementById("corTextoTeste");
-    voltarCorT.style.color = "#c4af11";
+    voltarCorT.style.color = "#e6687d";
 }
 
 // Mudar cor do fundo

@@ -6,7 +6,7 @@ function corTexto() {
 }
 function voltarTextoCor() {
     var voltarCorT = window.document.getElementById("corTextoTeste");
-    voltarCorT.style.color = "#c4af11";
+    voltarCorT.style.color = "#e6687d";
 }
 
 // No Html
@@ -19,7 +19,7 @@ function clicar() {
 
 function dClicar() {
     pTeste.innerText = "Clique aqui!";
-    pTeste.style.background = "#fdf5b8";
+    pTeste.style.background = "#ffc0cb";
 }
 
 // No Script
@@ -28,7 +28,7 @@ pTeste2.addEventListener("click", clicando);
 pTeste2.addEventListener("dblclick", dClicando);
     function clicando() {
         pTeste2.innerText = "Clicou!";
-        pTeste2.style.background = "#fdf5b8";
+        pTeste2.style.background = "#ffc0cb";
     }
     function dClicando() {
         pTeste2.innerText = "Clique aqui!";

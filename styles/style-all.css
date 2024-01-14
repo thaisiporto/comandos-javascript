@@ -4,13 +4,12 @@
 
 
 :root {
-    --amarelo: #fad712;
-    --amareloClaro:#fdf5b8;
-    --amareloEscuro: #c4af11;
+    --rosaClaro:#ffc0cb;
+    --rosa: #f88fa0;
+    --rosaEscuro: #e6687d;
     --azulClaro: #7c9cc7;
-    --azul: #24668d;
+    --azul: #1f74a5;
     --azulEscuro: #2b3452;
-
 }
 
 * {
@@ -22,7 +21,7 @@
 body {
     font-family: 'Open Sans';
     color: var(--azulEscuro);
-    background-color: var(--amareloClaro);
+    background-color: var(--rosaClaro);
 }
 
 main {
@@ -36,7 +35,7 @@ main {
 }
 
 h1 {
-    background-color: var(--amarelo);
+    background-color: var(--rosa);
     padding: 10px 30px;
     font-size: 1.7em;
     margin: 0 -20px 20px -20px;
@@ -70,17 +69,17 @@ div.comando p, input {
 }
 
 input.botaoTeste {
-    background-color: var(--amareloClaro);
+    background-color: var(--rosaClaro);
     color: var(--azul);
     border: none;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    border-bottom: 2px solid var(--amarelo);
+    border-bottom: 2px solid var(--rosa);
 }
 
 input.botaoTeste:hover {
-    background-color: var(--amarelo);
+    background-color: var(--rosa);
     color: var(--azulEscuro);
     cursor: pointer;
 }
@@ -94,7 +93,7 @@ div.comando code, div.eventoDOM code {
 
 p.pDeTestes {
     background-color: #eee;
-    color: var(--amareloEscuro);
+    color: var(--rosaEscuro);
     font-size: 0.8em;
     margin: 0 auto;
     padding: 5px 10px;
@@ -144,7 +143,7 @@ main p#links {
 }
 
 main a {
-    color: var(--amareloEscuro);
+    color: var(--rosaEscuro);
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;

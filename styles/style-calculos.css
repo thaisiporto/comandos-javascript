@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
-    --amarelo: #fad712;
-    --amareloClaro:#fdf5b8;
-    --amareloEscuro: #c4af11;
+    --rosaClaro:#ffc0cb;
+    --rosa: #f88fa0;
+    --rosaEscuro: #e6687d;
     --azulClaro: #7c9cc7;
-    --azul: #24668d;
+    --azul: #1f74a5;
     --azulEscuro: #2b3452;
 }
 
@@ -32,24 +32,24 @@ input.inputCalc {
 }
 
 input.botaoRes {
-    background-color: var(--amareloClaro);
+    background-color: var(--rosaClaro);
     color: var(--azulEscuro);
     border: none;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    border-bottom: 2px solid var(--amarelo);
+    border-bottom: 2px solid var(--rosa);
 }
 
 input.botaoRes:hover {
-    background-color: var(--amarelo);
+    background-color: var(--rosa);
     color: #2b3452;
     cursor: pointer;
 }
 
 p.resultado {
     background-color: #eee;
-    color: var(--amareloEscuro);
+    color: var(--rosaEscuro);
     font-size: 0.9em;
     margin: 0 auto;
     padding: 5px 10px;
