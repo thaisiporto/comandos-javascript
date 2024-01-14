@@ -11,7 +11,7 @@
 body {
     font-family: 'Open Sans';
     color: #3a4669;
-    background-color: #ffc0cb;
+    background-color: #fdf5b8;
 }
 
 main {
@@ -19,14 +19,14 @@ main {
     background-color: #ffffff;
     max-width: 700px;
     margin: auto;
-    border-top: 10px solid #7c9cc7;
-    border-right: 2px solid #f88fa0;
-    border-left: 2px solid #f88fa0;
-    box-shadow: 0 0 5px #2b34527c;
+    border-top: 10px solid #24668d;
+    border-right: 2px solid #f7df1e;
+    border-left: 2px solid #f7df1e;
+    box-shadow: 0 0 5px #222b497c;
 }
 
 h1 {
-    background-color: #f88fa0;
+    background-color: #f7df1e;
     padding: 10px 30px;
     font-size: 1.7em;
     margin: 0 -20px 20px -20px;
@@ -47,7 +47,7 @@ p {
 div.comando, div.eventoDOM {
     width: 100%;
     border-radius: 5px;
-    border: 1px solid #f88fa0;
+    border: 1px solid #24668d;
     margin: 20px auto;
     padding: 20px;
     text-align: center;
@@ -60,17 +60,17 @@ div.comando p, input {
 }
 
 input.botaoTeste {
-    background-color: #ffc0cb;
-    color: #3a4669;
+    background-color: #fdf5b8;
+    color: #24668d;
     border: none;
     padding: 10px;
     font-weight: 600;
     text-transform: uppercase;
-    border-bottom: 2px solid #f88fa0;
+    border-bottom: 2px solid #f7df1e;
 }
 
 input.botaoTeste:hover {
-    background-color: #f88fa0;
+    background-color: #f7df1e;
     color: #2b3452;
     cursor: pointer;
 }
@@ -84,7 +84,7 @@ div.comando code, div.eventoDOM code {
 
 p.pDeTestes {
     background-color: #eee;
-    color: #e6687d;
+    color: #c4af11;
     font-size: 0.8em;
     margin: 0 auto;
     padding: 5px 10px;
@@ -123,7 +123,7 @@ main h2 {
 }
 
 main h3 {
-    color: #3a4669;
+    color: #24668d;
     margin: 20px 0;
     font-size: 1.1em;
     margin-left: 20px;
@@ -134,7 +134,7 @@ main p#links {
 }
 
 main a {
-    color: #f88fa0;
+    color: #c4af11;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
