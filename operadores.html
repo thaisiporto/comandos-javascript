@@ -23,7 +23,11 @@
             <li><strong>Lógicos:</strong> permitem a comparação de valores booleanos.<br>
             <code>!</code> representa <strong>negação</strong>. <code>&&</code> significa <strong>conjunção</strong>, também chamado de <strong>e</strong>. <code>||</code> exprime <strong>disjunção</strong>, ou seja, <strong>ou</strong>. <br>
             Nos casos de conjunção e disjunção, os operadores são binários. Em conjunção, os dois valores devem ser true para o resultado final ser true, no caso de disjunção, ele apenas retornará false, se os dois forem false.</li>
-            <li>Ternário</li>
+            <li><strong>Ternário</strong>: possui três operandos, normalmente utilizado como atalho para <code>if</code>.<br>
+            É composto por dois símbolos: <code>?</code> e <code>:</code>, ou seja, &nbsp;
+            <code>condicao ? true : false</code> <br>
+            Exemplo: <code>media >= 7.0 ? "Aprovado" : "Reprovado"</code> <br>
+            </li>
         </ul>
         <h2>Operadores Aritméticos</h2>
         <p>Os operadores aritméticos usados para realizar cálculos em Javascript são:</p>
@@ -37,13 +41,16 @@
             </ul>
             <h3>Precedência dos Operadores Aritméticos</h3>
             <ol>
-                <li></li>
+                <li><strong><code>()</code></strong>: Parentêses.</li>
+                <li><strong><code>^</code></strong>: Potências.</li>
+                <li><strong><code>&#247;</code>, <code>&#215;</code> ou <code>%</code></strong>: Divisão, Multiplicação ou Resto da Divisão Inteira (da esquerda para a direita).</li>
+                <li><strong><code>+</code> ou <code>-</code></strong>: Soma ou Subtração (da esquerda para a direita).</li>
             </ol>
 
         <h2>Precedência dos Operadores</h2>
          <ol>
-            <li><strong>Aritméticos</strong>: <code>()</code>, <code>**</code>, <code>/</code>, etc.</li>
-            <li><strong>Relacionais</strong>: não possuem ordem definida, como nos aritméticos, a ordem é por aparecimento. <code>></code>, <code>&lt;</code>, <code>>=</code>, etc.</li>
+            <li><strong>Aritméticos</strong>: são os primeiros a serem lidos em uma operação e possuem ordem entre si. <code>()</code>, <code>**</code>, <code>/</code>, etc.</li>
+            <li><strong>Relacionais</strong>: não possuem ordem definida entre si, a ordem é por aparecimento. <code>></code>, <code>&lt;</code>, <code>>=</code>, etc.</li>
             <li><strong>Lógicos</strong>: são lidos após os aritméticos e relacionais, sua ordem entre si é: <code>!</code>, <code>&&</code> e <code>||</code>.</li>
          </ol>
         
