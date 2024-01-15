@@ -53,6 +53,24 @@ p {
     text-align: justify;
 }
 
+p.botao {
+    text-align: center;
+    margin: 25px 0;
+}
+
+p.botao a {
+    color: #2b3452;
+    background-color: #ffc0cb;
+    padding: 5px 10px;
+    border-bottom: 3px solid #f88fa0;
+}
+
+
+p.botao a:hover {
+    text-decoration: none;
+    background-color: #f88fa0;
+}
+
 ul {
     padding-left: 40px;
 }
