@@ -44,7 +44,7 @@ function multiplicar() {
 function dividir() {
     var numDiv1 = window.document.querySelector("input#iNumbDiv1");
     var numDiv2 = window.document.querySelector("input#iNumbDiv2");
-    var resultadoDiv = window.document.querySelector("p#resDivisão");
+    var resultadoDiv = window.document.querySelector("p#resDivisao");
 
     var div1 = Number(numDiv1.value);
     var div2 = Number(numDiv2.value);
