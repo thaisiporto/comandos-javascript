@@ -71,11 +71,11 @@ p.botao a:hover {
     background-color: #f88fa0;
 }
 
-ul {
+ul, ol {
     padding-left: 40px;
 }
 
-ul li {
+ul li, ol li {
     list-style-type: circle;
     font-size: 0.9em;
     margin-bottom: 10px;
