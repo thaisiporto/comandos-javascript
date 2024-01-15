@@ -53,6 +53,11 @@ p {
     text-align: justify;
 }
 
+li span.destaque {
+    text-decoration: var(--rosa) underline;
+    font-size: 1em;
+}
+
 div.comando, div.eventoDOM {
     width: 100%;
     border-radius: 5px;
@@ -107,10 +112,11 @@ ul {
 
 ul li {
     list-style-type: circle;
+    font-size: 0.9em;
 }
 
 ul li span {
-    font-size: 0.9em;
+    font-size: 0.8em;
 }
 
 main figure {
@@ -156,5 +162,16 @@ main a:hover {
 @media screen and (min-width:600px) {
     br.breakCode {
         display: none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    p#links {
+        margin-top: 20px;
+    }
+    p#links a {
+        display: block;
+        margin: 0;
+        line-height: 0.5em;
     }
 }
