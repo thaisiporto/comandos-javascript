@@ -60,6 +60,7 @@ ul {
 ul li {
     list-style-type: circle;
     font-size: 0.9em;
+    margin-bottom: 10px;
 }
 
 ul li span {
