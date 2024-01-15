@@ -54,6 +54,34 @@ function dividir() {
     resultadoDiv.innerHTML = `${div1} &#247; ${div2} é igual a <strong>${multiplicacao.toFixed(2).replace('.', ',')}</strong>`;
 }
 
+// Resto da Divisão
+function resto() {
+    var restoDiv1 = window.document.querySelector("input#iRestoDiv1");
+    var restoDiv2 = window.document.querySelector("input#iRestoDiv2");
+    var resultadoResto = window.document.querySelector("p#resResto");
+
+    var rest1 = Number(restoDiv1.value);
+    var rest2 = Number(restoDiv2.value);
+
+    var restoRes = rest1 % rest2;
+
+    resultadoResto.innerHTML = `O resto da divisão inteira ${rest1} &#247; ${rest2} é igual a <strong>${restoRes}</strong>`;
+}
+
+// Potência
+function potencia() {
+    var numPot1 = window.document.querySelector("input#iNumPotencia1");
+    var numPot2 = window.document.querySelector("input#iNumPotencia2");
+    var resultadoPotencia = window.document.querySelector("p#resPotencia");
+
+    var numPotencia1 = Number(numPot1.value);
+    var numPotencia2 = Number(numPot2.value);
+
+    var resultadoPot = numPotencia1 ** numPotencia2;
+
+    resultadoPotencia.innerHTML = `${numPotencia1} elevado a ${numPotencia2} potência, é igual a <strong>${resultadoPot}</strong>`;
+}
+
 // Conversão para String
 
 function somarSemConvert() {
