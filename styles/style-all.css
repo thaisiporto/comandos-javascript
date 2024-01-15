@@ -53,6 +53,14 @@ p {
     text-align: justify;
 }
 
+li code {
+    font-size: 1.2em;
+    background-color: #eee;
+    padding: 0 5px;
+    border-bottom: 1px solid #ccc;
+}   
+
+
 li span.destaque {
     text-decoration: var(--rosa) underline;
     font-size: 1em;
