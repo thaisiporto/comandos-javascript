@@ -53,6 +53,20 @@ p {
     text-align: justify;
 }
 
+ul {
+    padding-left: 40px;
+}
+
+ul li {
+    list-style-type: circle;
+    font-size: 0.9em;
+}
+
+ul li span {
+    font-size: 0.8em;
+}
+
+
 li code {
     font-size: 1.2em;
     background-color: #eee;
@@ -60,10 +74,14 @@ li code {
     border-bottom: 1px solid #ccc;
 }   
 
-
 li span.destaque {
     text-decoration: var(--rosa) underline;
     font-size: 1em;
+}
+
+li.subTopico {
+    list-style-type: disc;
+    margin-left: 15px;
 }
 
 div.comando, div.eventoDOM {
@@ -112,19 +130,6 @@ p.pDeTestes {
     padding: 5px 10px;
     font-weight: 600;
     cursor: pointer;
-}
-
-ul {
-    padding-left: 40px;
-}
-
-ul li {
-    list-style-type: circle;
-    font-size: 0.9em;
-}
-
-ul li span {
-    font-size: 0.8em;
 }
 
 main figure {
