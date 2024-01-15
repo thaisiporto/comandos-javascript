@@ -11,12 +11,22 @@
 <body>
     <main>
         <h1>Cálculos</h1>
-        <p>Símbolos usados para realizar cálculos</p>
+        <h2>Operadores</h2>
+        <ul>
+            <li><strong>Aritméticos:</strong> Operadores utilizados para fazer cálculos</li>
+            <li><strong>Atribuição: </strong> </li>
+            <li>Relacionais</li>
+            <li>Lógicos</li>
+            <li>Ternário</li>
+        </ul>
+        <p>Os operadores aritméticos usados para realizar cálculos em Javascript são:</p>
             <ul>
                 <li><strong class="simbolo">+</strong> Soma</li>
                 <li><strong class="simbolo">-</strong> Subtração</li>
                 <li><strong class="simbolo">*</strong> Multiplicação</li>
-                <li><strong class="simbolo">/</strong> Divisão</li>
+                <li><strong class="simbolo">/</strong> Divisão (números reais)</li>
+                <li><strong class="simbolo">%</strong> Resto da divisão inteira</li>
+                <li><strong class="simbolo">**</strong> Potência</li>
             </ul>
 
         <div class="comando"> <!-- Acessando Valores -->
@@ -82,7 +92,6 @@
             <p id="resMultiplicacao" class="resultado">Resultado da Multiplicação</p>
 
         </div>
-
         
         <div class="comando"> <!-- Divisão -->
             <h2>Divisão</h2>
@@ -95,7 +104,38 @@
             <input type="number" name="numbDiv1" id="iNumbDiv1" class="inputCalc"> <strong>&#247;</strong> 
             <input type="number" name="numbDiv2" id="iNumbDiv2" class="inputCalc">
             <input type="button" value="Dividir" onclick="dividir()" id="botaoDivisao" class="botaoRes">
-            <p id="resDivisão" class="resultado">Resultado da Divisão</p>
+            <p id="resDivisao" class="resultado">Resultado da Divisão</p>
+
+        </div>
+
+        <div class="comando"> <!-- Resto da divisão -->
+            <h2>Resto da Divisão Inteira</h2>
+            <p>É um número maior que zero e menor que o divisor. É <strong>o que sobra</strong> quando o quociente de uma divisão chega no limite como número inteiro (finalizando a conta antes de adicionar vírgula ao quociente).</p>
+            <p>
+                <code>
+                    var resto = numero1 % numero2;<br>
+                </code>
+            </p>
+       
+            <input type="number" name="restoDiv1" id="iRestoDiv1" class="inputCalc"> <strong>&#247;</strong> 
+            <input type="number" name="restoDiv2" id="iRestoDiv2" class="inputCalc">
+            <input type="button" value="Encontrar Resto" onclick="resto()" id="botaoResto" class="botaoRes">
+            <p id="resResto" class="resultado">Resto da Divisão</p>
+
+        </div>
+
+        <div class="comando"> <!-- Potência -->
+            <h2>Potência</h2>
+            <p>
+                <code>
+                    var potencia = numero1 ** numero2;<br>
+                </code>
+            </p>
+       
+            <input type="number" name="numPotencia1" id="iNumPotencia1" class="inputCalc"> <strong> ^ </strong> 
+            <input type="number" name="numPotencia2" id="iNumPotencia2" class="inputCalc">
+            <input type="button" value="Calcular Potência" onclick="potencia()" id="botaoPotencia" class="botaoRes">
+            <p id="resPotencia" class="resultado">Potência</p>
 
         </div>
 
@@ -147,7 +187,7 @@
 
         </div>
 
-        <p id="links"><a href="dom.html">Introdução ao DOM</a>&nbsp; &nbsp;<a href="index.html">Comandos Básicos</a></p>
+        <p id="links"><a href="introducao.html">Introdução ao Javascript</a>&nbsp; &nbsp;<a href="dom.html">Introdução ao Dom</a> &nbsp; &nbsp;<a href="comandos.html">Comandos Básicos</a></p>
     </main>
 
     <script>
