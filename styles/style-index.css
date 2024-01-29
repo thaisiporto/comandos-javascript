@@ -30,11 +30,6 @@ main a.topic:hover {
     background-color: var(--color04);
 }
 
-main h1, main p {
-    margin-bottom: 15px;
-    text-align: center;
-}
-
 @media screen and (max-width: 801px) {
     main a.topic {
         display: block;
