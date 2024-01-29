@@ -174,7 +174,7 @@ input.botaoTeste:hover {
     cursor: pointer;
 }
 
-div.codigo code, div.comando code, div.eventoDOM code {
+div.codigo code, div.comando code, div.alinhadoEsq code {
     font-size: 14px;
     font-family: 'Anonymous Pro', monospace;
     color: var(--color06);
