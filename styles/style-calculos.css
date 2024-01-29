@@ -63,3 +63,10 @@ span {
     display: block;
     margin: 5px 0;
 }
+
+@media screen and (max-width: 500px) {
+    input.botaoRes {
+        display: block;
+        margin: 10px auto;
+    }
+}
