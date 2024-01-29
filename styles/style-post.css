@@ -133,7 +133,7 @@ li.subTopico {
 }
 
 /* Códigos e Comandos */
-div.comando, div.eventoDOM {
+div.comando, div.alinhadoEsq {
     max-width: 100%;
     border-radius: 5px;
     border: 1px solid var(--colorHighlight1);
