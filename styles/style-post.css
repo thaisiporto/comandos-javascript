@@ -102,6 +102,12 @@ ul li {
     list-style-type: circle;
 }
 
+ol li::marker {
+    color: var(--colorHighlight1);
+    font-weight: 700;
+    font-size: 14px;
+}
+
 ul li span {
     font-size: 12px;
 }
