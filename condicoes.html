@@ -27,15 +27,56 @@
             <h2>Exemplos</h2>
             <div class="comando">
                 <h3>Condição Simples</h3>
-                <p><input type="number" name="velocidade" id="iVelocidade"> <input type="submit" value="Enviar" onclick="enviarVelocidade()" class="botaoTeste"></p>
                 <p class="alinhadoEsq">
                     <code>
                     if (velocidade > 80) { &nbsp; <br>
-                    &nbsp; &nbsp; suaVelocidade.innerHTML = "Você foi multado!" <br>
+                    &nbsp; &nbsp; suaVelocidade.innerHTML = "Você foi multado!"  &nbsp;<br>
                     &nbsp; }
                 </code>
                 </p>
-                <p id="hideTeste" class="pDeTestes"></p>
+                <p><strong>Descubra se você foi multado.</strong><br>Em que velocidade você estava?</p>
+                <p><input type="number" name="velocidadeS" id="iVelocidadeS"> <input type="submit" value="Enviar" onclick="enviarVelocidadeS()" class="botaoTeste"></p>
+                <p id="condSimp" class="hideTeste" class="pDeTestes"></p>
+                <p>Neste exemplo, se a velocidade for menor que 80km/h, o script não retorna nenhum resultado.</p>
+            </div>
+
+            <div class="comando">
+                <h3>Condição Composta</h3>
+                <p class="alinhadoEsq">
+                    <code>
+                    if (velocidade > 80) { &nbsp; <br>
+                    &nbsp; &nbsp; suaVelocidade.innerHTML = "Você foi multado!"  &nbsp;<br>
+                    &nbsp; } else { &nbsp; <br>
+                        &nbsp; &nbsp; suaVelocidade.innerHTML = "Você não foi multado!"<br>
+                    &nbsp; }
+                </code>
+                </p>
+                <p><strong>Descubra se você foi multado.</strong><br>Em que velocidade você estava?</p>
+                <p><input type="number" name="velocidadeC" id="iVelocidadeC"> <input type="submit" value="Enviar" onclick="enviarVelocidadeC()" class="botaoTeste"></p>
+                <p id="condComp" class="hideTeste" class="pDeTestes"></p>
+                <p>Com a condição composta, este script retorna resultados diferentes se a velocidade for maior ou menor que 80km/h.</p>
+            </div>
+
+            <div class="comando">
+                <h3>Condição Aninhada</h3>
+                <p class="alinhadoEsq">
+                    <code>
+                    if (idade &lt; 16) { &nbsp; <br>
+                    &nbsp; &nbsp; suaIdade.innerHTML = "Não vota!"  &nbsp;<br>
+                    &nbsp; } else { &nbsp; <br>
+                        &nbsp; &nbsp; if (idade &lt; 18 || idade &gt; 65) {  <br>
+                            &nbsp; &nbsp; &nbsp; suaIdade.innerHTML = "Voto opcional!"<br>
+                        &nbsp; &nbsp; } else { <br>
+                            &nbsp; &nbsp; &nbsp; suaIdade.innerHTML = "Voto obrigatório!"<br>
+                        &nbsp; &nbsp; }<br>
+                    &nbsp; }<br>
+                </code>
+                </p>
+                <p><strong>Descubra se você pode votar.</strong><br>Qual é a sua idade?</p>
+                <p><input type="number" name="idadeA" id="iIdadeA"> <input type="submit" value="Enviar" onclick="enviarIdadeA()" class="botaoTeste"></p>
+                <p id="condAnin" class="hideTeste" class="pDeTestes"></p>
+
+                <p>Com a condição composta, este script retorna resultados diferentes se a velocidade for maior ou menor que 80km/h.</p>
             </div>
 
         </article>

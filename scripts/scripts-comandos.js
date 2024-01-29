@@ -12,7 +12,7 @@ function confirma() {
 // Janela de Prompt
 function entradaTexto() {
     var nome = window.prompt("Qual é seu nome?");
-    var resultado = window.document.querySelector("p#hideTeste");
+    var resultado = window.document.querySelector("p#promptTeste");
 
     resultado.style.display = "block";
     resultado.innerText = `Olá, ${nome}!`;

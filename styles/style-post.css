@@ -158,7 +158,7 @@ p.pDeTestes {
     cursor: pointer;
 }
 
-p#hideTeste {
+p.hideTeste {
     display: none;
 }
 
@@ -195,7 +195,7 @@ input.botaoTeste:hover {
 }
 
 div.comando p.alinhadoEsq {
-    width: 400px;
+    width: 410px;
     text-align: left;
 }
 
