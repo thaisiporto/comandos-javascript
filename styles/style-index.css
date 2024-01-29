@@ -13,36 +13,6 @@
     --colorHighlight2: #D94C1A;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--color01);
-    text-align: center;
-    text-transform: uppercase;
-    padding: 20px;
-    border-bottom: 4px solid var(--colorHighlight1);
-}
-
-header a {
-    color: var(--color03);
-    text-decoration: none;
-}
-
-body {
-    background-color: var(--color03);
-    color: var(--color01);
-    font-family: 'Poppins', "Open Sans", Arial, sans-serif;
-}
-
-main {
-    width: 800px;
-    margin: 15px auto;
-    padding: 15px;
-}
-
 main a.topic {
     display: inline-block;
     width: 375px;
@@ -63,4 +33,10 @@ main a.topic:hover {
 main h1, main p {
     margin-bottom: 15px;
     text-align: center;
+}
+
+@media screen and (max-width: 801px) {
+    main a.topic {
+        display: block;
+    }
 }
