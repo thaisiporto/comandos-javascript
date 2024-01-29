@@ -158,6 +158,17 @@ p.pDeTestes {
     cursor: pointer;
 }
 
+p#hideTeste {
+    display: none;
+}
+
+input[type="number"], input[type="text"]{
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
+}
+
 input.botaoTeste {
     background-color: var(--colorHighlight2);
     color:var(--color05);
@@ -181,6 +192,11 @@ input.botaoTeste:hover {
     background-color: var(--color04);
     border-bottom: 1px solid var(--color06);
     padding: 5px 10px;
+}
+
+div.comando p.alinhadoEsq {
+    width: 400px;
+    text-align: left;
 }
 
 div.codigo {

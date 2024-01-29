@@ -25,41 +25,19 @@
                 <li><strong>Condição Múltipla: </strong>Possui múltiplos blocos de código, com resultados diferentes do true e false habituais. Só funciona com números inteiros e strings.</li>
             </ul>
             <h2>Exemplos</h2>
-            <h3>Condição Simples</h2>
+            <div class="comando">
+                <h3>Condição Simples</h3>
+                <p><input type="number" name="velocidade" id="iVelocidade"> <input type="submit" value="Enviar" onclick="enviarVelocidade()" class="botaoTeste"></p>
                 <p class="alinhadoEsq">
                     <code>
-                    if (condicao) { &nbsp; <br>
-                    &nbsp; &nbsp; <em>true</em> &nbsp; <br>
+                    if (velocidade > 80) { &nbsp; <br>
+                    &nbsp; &nbsp; suaVelocidade.innerHTML = "Você foi multado!" <br>
                     &nbsp; }
                 </code>
                 </p>
-            <h3>Condição Composta</h3>
-            <p class="alinhadoEsq">
-                <code>
-                if (condicao) { &nbsp; <br>
-                &nbsp; &nbsp; <em>true</em> &nbsp; <br>
-                &nbsp; } else { &nbsp; <br>
-                &nbsp; &nbsp; <em>false</em>&nbsp; <br>
-                &nbsp;  }
-            </code>
-            </p>
-            <h3>Condição Aninhada</h3>
-            <p class="alinhadoEsq">
-                <code>
-                if (condicao) { &nbsp; <br>
-                &nbsp; &nbsp; <em>true</em> &nbsp; <br>
-                &nbsp; } else { &nbsp; <br>
-                &nbsp; &nbsp;
-                    if (condicao) { &nbsp; <br>
-                    &nbsp; &nbsp; &nbsp; <em>true</em> &nbsp; <br>
-                    &nbsp; &nbsp; } else { &nbsp; <br>
-                    &nbsp; &nbsp; &nbsp; <em>false</em>&nbsp; <br>
-                    &nbsp;  &nbsp; }
-                    &nbsp; <br>
-                &nbsp;  }
-            </code>
-            </p>
-            <h3>Condição Múltipla</h3>
+                <p id="hideTeste" class="pDeTestes"></p>
+            </div>
+
         </article>
     </main>
     <footer>
@@ -70,6 +48,7 @@
             DOM 
             <i class="material-symbols-outlined">keyboard_double_arrow_right</i> </a>
     </footer>
+    <script src="scripts/scripts-condicoes.js"></script>
 </body>
 </html>
 
