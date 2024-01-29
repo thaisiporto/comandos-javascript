@@ -42,3 +42,8 @@ main {
     margin: 15px auto;
     padding: 15px;
 }
+
+main h1, main p {
+    margin-bottom: 15px;
+    text-align: center;
+}
