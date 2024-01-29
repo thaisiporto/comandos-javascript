@@ -42,25 +42,3 @@ main {
     margin: 15px auto;
     padding: 15px;
 }
-
-main a.topic {
-    display: inline-block;
-    width: 375px;
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid var(--color02);
-    border-radius: 4px;
-    color: var(--color02);
-    text-align: center;
-    text-decoration: none;
-}
-
-main a.topic:hover {
-    background-color: var(--color04);
-}
-
-main h1, main p {
-    margin-bottom: 15px;
-    text-align: center;
-}
