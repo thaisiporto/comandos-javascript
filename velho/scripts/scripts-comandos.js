@@ -12,31 +12,27 @@ function confirma() {
 // Janela de Prompt
 function entradaTexto() {
     var nome = window.prompt("Qual é seu nome?");
-    var resultado = window.document.querySelector("p#promptTeste");
-
-    resultado.style.display = "block";
     window.document.getElementById("promptTeste").innerText = `Olá, ${nome}!`;
-
 }
 
 // Mudar cor do texto
 function corTexto() {
     var corDoTexto = window.document.getElementById("corTextoTeste");
-    corDoTexto.style.color = "#D94C1A";
+    corDoTexto.style.color = "#3a4669";
 }
 function voltarTextoCor() {
     var voltarCorT = window.document.getElementById("corTextoTeste");
-    voltarCorT.style.color = "#172a3a";
+    voltarCorT.style.color = "#e6687d";
 }
 
 // Mudar cor do fundo
 function corFundo() {
     var corDoFundo = window.document.getElementById("corFundoTeste");
-    corDoFundo.style.background = "#F2BE24";
+    corDoFundo.style.background = "#3a4669";
 }
 function voltarFundo() {
     var voltarCorF = window.document.getElementById("corFundoTeste");
-    voltarCorF.style.background = "#d2d9e2";
+    voltarCorF.style.background = "#eee";
 }
 
 // Mudar o texto 
@@ -60,7 +56,7 @@ function minus() {
 }
 function textoNormal() {
     var normalCase = window.document.getElementById("maiusMinus").innerText;
-    window.document.getElementById("maiusMinus").innerText = "Esse Texto Vai Se Transformar!"
+    window.document.getElementById("maiusMinus").innerText = "Esse Texto Vai Mudar!"
 }
 
 // Contar caracteres

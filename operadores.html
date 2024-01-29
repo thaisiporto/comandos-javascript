@@ -1,68 +1,73 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style-all.css">
-    <link rel="stylesheet" href="styles/style-calculos.css">
-    <title>Operadores</title>
+    <link rel="stylesheet" href="styles/style-post.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Introdução</title>
 </head>
 <body>
+    <header>
+        <h1><a href="index.html">Estudos em Javascript</a></h1>
+    </header>
     <main>
-        <h1>Operadores</h1>
-        <h2>Tipos de Operadores</h2>
-        <ul>
-            <li><strong>Aritméticos:</strong> Operadores utilizados para fazer cálculos</li>
-            <li><strong>Atribuição: </strong> Operadores utilizados para atribuir valores a variáveis.<br>Exemplo: &nbsp;<code>var soma = num1 + num2</code>. O indicardor &nbsp; = &nbsp; é lido como <strong>recebe</strong>.</li>
-            <li class="subTopico"><strong>Auto-Atribuição:</strong> É quando uma variável recebe ela mesma.<br>
-                Exemplo: &nbsp; <code>var num1 = 3</code> &nbsp;<code>var num1 = num1 + 4</code>. O valor da variável passa a ser 7. É possível abreviar a auto-atribuição como <code>var num1 += 4</code>.</li>
-            <li><strong>Relacionais: </strong> apresenta relação entre dois valores. Toda expressão derivada de um operador relacional, será sempre um valor booleano (verdadeiro ou falso). <br>
-            Exemplo: <code>5 > 2 - true</code> <code>7 &lt; 2 - false</code> <code>8 >= 8 - true</code> <code>5 == 5 - true</code> <code>4 != 4 - false</code>. == significa <strong>igual</strong>, enquanto != representa <strong>diferente</strong>.<br>
-            O operador ==, mesmo significando igual, não representa uma igualdade estrita e sim igualdade ampla, ou seja, um 5 do tipo Number, pode ser identificado como igual a um "5" do tipo string. Nesse caso, o operador de igualdade estrita (idêntico), seria ===.
-            <li><strong>Lógicos:</strong> permitem a comparação de valores booleanos.<br>
-            <code>!</code> representa <strong>negação</strong>. <code>&&</code> significa <strong>conjunção</strong>, também chamado de <strong>e</strong>. <code>||</code> exprime <strong>disjunção</strong>, ou seja, <strong>ou</strong>. <br>
-            Nos casos de conjunção e disjunção, os operadores são binários. Em conjunção, os dois valores devem ser true para o resultado final ser true, no caso de disjunção, ele apenas retornará false, se os dois forem false.</li>
-            <li><strong>Ternário</strong>: possui três operandos, normalmente utilizado como atalho para <code>if</code>.<br>
-            É composto por dois símbolos: <code>?</code> e <code>:</code>, ou seja, &nbsp;
-            <code>condicao ? true : false</code> <br>
-            Exemplo: <code>media >= 7.0 ? "Aprovado" : "Reprovado"</code> <br>
-            </li>
-        </ul>
-        <h2>Operadores Aritméticos</h2>
-        <p>Os operadores aritméticos usados para realizar cálculos em Javascript são:</p>
+        <article>
+            <h1>Operadores</h1>
+            <h2>Tipos de Operadores</h2>
             <ul>
-                <li><strong class="simbolo">+</strong> Soma</li>
-                <li><strong class="simbolo">-</strong> Subtração</li>
-                <li><strong class="simbolo">*</strong> Multiplicação</li>
-                <li><strong class="simbolo">/</strong> Divisão (números reais)</li>
-                <li><strong class="simbolo">%</strong> Resto da divisão inteira</li>
-                <li><strong class="simbolo">**</strong> Potência</li>
+                <li><strong>Aritméticos:</strong> Operadores utilizados para fazer cálculos.</li>
+                <li><strong>Atribuição: </strong> Operadores utilizados para atribuir valores a variáveis.</li>
+                    <li class="subTopico"><strong>Exemplo:</strong> &nbsp;<code>var soma = num1 + num2</code>. &nbsp; O indicardor &nbsp; = &nbsp; é lido como <strong>recebe</strong>.</li>
+                    <li class="subTopico"><strong>Auto-Atribuição:</strong> É quando uma variável recebe ela mesma.<br>
+                    <li class="subTopico"><strong>Exemplo:</strong> &nbsp;<code>var num1 = 3</code> &nbsp;<code>var num1 = num1 + 4</code>. O valor da variável passa a ser 7. É possível abreviar a auto-atribuição como <code>var num1 += 4</code>.</li>
+                <li><strong>Relacionais: </strong> apresenta relação entre dois valores. Toda expressão derivada de um operador relacional, será sempre um valor booleano (verdadeiro ou falso).</li>
+                    <li class="subTopico"><strong>Exemplo: &nbsp;</strong> <code>5 > 2 - true</code> <code>7 &lt; 2 - false</code> <code>8 >= 8 - true</code> <code>5 == 5 - true</code> <code>4 != 4 - false</code>. == significa <strong>igual</strong>, enquanto != representa <strong>diferente</strong>.<br>
+                O operador ==, mesmo significando igual, não representa uma igualdade estrita e sim igualdade ampla, ou seja, um 5 do tipo Number, pode ser identificado como igual a um "5" do tipo string. Nesse caso, o operador de igualdade estrita (idêntico), seria ===.
+                <li><strong>Lógicos:</strong> permitem a comparação de valores booleanos.<br>
+                <code>!</code> representa <strong>negação</strong>. <code>&&</code> significa <strong>conjunção</strong>, também chamado de <strong>e</strong>. <code>||</code> exprime <strong>disjunção</strong>, ou seja, <strong>ou</strong>. </li>
+                <li class="subTopico">Nos casos de conjunção e disjunção, os operadores são binários. Em conjunção, os dois valores devem ser true para o resultado final ser true, no caso de disjunção, ele apenas retornará false, se os dois forem false.</li>
+                <li><strong>Ternário</strong>: possui três operandos, normalmente utilizado como atalho para <code>if</code>.<br>
+                É composto por dois símbolos: <code>?</code> e <code>:</code>, ou seja, &nbsp;
+                <code>condicao ? true : false</code> </li>
+                <li class="subTopico"><strong>Exemplo:</strong> &nbsp;<code>media >= 7.0 ? "Aprovado" : "Reprovado"</code> <br>
+                </li>
             </ul>
-            <h3>Precedência dos Operadores Aritméticos</h3>
+            <h2>Operadores Aritméticos</h2>
+            <p>Os operadores aritméticos usados para realizar cálculos em Javascript são:</p>
+                <ul>
+                    <li><strong class="simbolo">+</strong> Soma</li>
+                    <li><strong class="simbolo">-</strong> Subtração</li>
+                    <li><strong class="simbolo">*</strong> Multiplicação</li>
+                    <li><strong class="simbolo">/</strong> Divisão (números reais)</li>
+                    <li><strong class="simbolo">%</strong> Resto da divisão inteira</li>
+                    <li><strong class="simbolo">**</strong> Potência</li>
+                </ul>
+                <h3>Precedência dos Operadores Aritméticos</h3>
+                <ol>
+                    <li><strong><code>()</code></strong>: Parentêses.</li>
+                    <li><strong><code>^</code></strong>: Potências.</li>
+                    <li><strong><code>&#247;</code>, <code>&#215;</code> ou <code>%</code></strong>: Divisão, Multiplicação ou Resto da Divisão Inteira (da esquerda para a direita).</li>
+                    <li><strong><code>+</code> ou <code>-</code></strong>: Soma ou Subtração (da esquerda para a direita).</li>
+                </ol>
+
+            <h2>Precedência dos Operadores</h2>
             <ol>
-                <li><strong><code>()</code></strong>: Parentêses.</li>
-                <li><strong><code>^</code></strong>: Potências.</li>
-                <li><strong><code>&#247;</code>, <code>&#215;</code> ou <code>%</code></strong>: Divisão, Multiplicação ou Resto da Divisão Inteira (da esquerda para a direita).</li>
-                <li><strong><code>+</code> ou <code>-</code></strong>: Soma ou Subtração (da esquerda para a direita).</li>
+                <li><strong>Aritméticos</strong>: são os primeiros a serem lidos em uma operação e possuem ordem entre si. <code>()</code>, <code>**</code>, <code>/</code>, etc.</li>
+                <li><strong>Relacionais</strong>: não possuem ordem definida entre si, a ordem é por aparecimento. <code>></code>, <code>&lt;</code>, <code>>=</code>, etc.</li>
+                <li><strong>Lógicos</strong>: são lidos após os aritméticos e relacionais, sua ordem entre si é: <code>!</code>, <code>&&</code> e <code>||</code>.</li>
             </ol>
-
-        <h2>Precedência dos Operadores</h2>
-         <ol>
-            <li><strong>Aritméticos</strong>: são os primeiros a serem lidos em uma operação e possuem ordem entre si. <code>()</code>, <code>**</code>, <code>/</code>, etc.</li>
-            <li><strong>Relacionais</strong>: não possuem ordem definida entre si, a ordem é por aparecimento. <code>></code>, <code>&lt;</code>, <code>>=</code>, etc.</li>
-            <li><strong>Lógicos</strong>: são lidos após os aritméticos e relacionais, sua ordem entre si é: <code>!</code>, <code>&&</code> e <code>||</code>.</li>
-         </ol>
-        
-        <p class="botao"><a href="calculos.html">Executando Cálculos</a></p>
-
-        <p id="links"><a href="index.html">Introdução ao Javascript</a>&nbsp; &nbsp;<a href="dom.html">Introdução ao Dom</a> &nbsp; &nbsp;<a href="comandos.html">Comandos Básicos</a></p>
     </main>
-
-    <script>
-
-    </script>
-
+    <footer>
+        <a href="comandos.html" class="topic" id="link1">
+            <i class="material-symbols-outlined">keyboard_double_arrow_left</i>
+            Comandos Básicos</a>
+        <a href="calculos.html" class="topic" id="link2">
+            Cálculos Básicos
+            <i class="material-symbols-outlined">keyboard_double_arrow_right</i> </a>
+    </footer>
+    <script src="scripts/scripts-calculos.js"></script>
 </body>
-<script src="scripts/scripts-calculos.js"></script>
 </html>
