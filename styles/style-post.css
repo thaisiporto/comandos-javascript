@@ -195,7 +195,7 @@ input.botaoTeste:hover {
 }
 
 div.comando p.alinhadoEsq {
-    width: 410px;
+    max-width: 410px;
     text-align: left;
 }
 
