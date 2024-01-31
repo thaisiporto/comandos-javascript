@@ -204,14 +204,15 @@ div.codigo {
 }
 
 /* Imagens */
-main figure {
-    margin: 20px auto;
-    text-align: center;
-    font-size: 12px;
-}
 
 main img {
     width: 100%;
+}
+
+main img.imagem50 {
+    display: block;
+    margin: 15px auto;
+    width: 50%;
 }
 
 

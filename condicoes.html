@@ -22,7 +22,9 @@
                 <li><strong>Condição Simples: </strong>Só possui um bloco, o <em>true</em>. Quando a condição for falsa, nada acontece.</li>
                 <li><strong>Condição Composta: </strong>Possui os blocos <em>true</em> e <em>false</em>. Se a condição resultar em verdadeiro, algo acontece, se resultar em falso, outro evento ocorre.</li>
                 <li><strong>Condição Aninhada: </strong>É quando uma condição composta possui outras condições dentro dela.</li>
-                <li><strong>Condição Múltipla: </strong>Possui múltiplos blocos de código, com resultados diferentes do true e false habituais. Só funciona com números inteiros e strings.</li>
+                <li><strong>Condição Múltipla: </strong>Possui múltiplos blocos de código, com resultados diferentes do true e false habituais. É melhor utilizada para valores fixos, ao invés de intervalos. Só funciona com números inteiros e strings.<br>
+                <img class="imagem50" src="images/condicao-multipla.png" alt="organograma da condição múltipla"></li>
+
             </ul>
             <h2>Exemplos</h2>
             <div class="comando">
@@ -76,7 +78,27 @@
                 <p><input type="number" name="idadeA" id="iIdadeA"> <input type="submit" value="Enviar" onclick="enviarIdadeA()" class="botaoTeste"></p>
                 <p id="condAnin" class="hideTeste" class="pDeTestes"></p>
 
-                <p>No exemplo, o script pode retornar 3 resultados diferentes, sendo que dois deles estão aninhando dentro do comando <em>else</em>.</p>
+                <p>No exemplo, o script pode retornar 3 resultados diferentes, sendo que dois deles estão aninhados dentro do comando <em>else</em>.</p>
+            </div>
+
+            <div class="comando">
+                <h3>Condição Múltipla</h3>
+                <p class="alinhadoEsq">
+                    <code>
+                    switch() { &nbsp; <br>
+                        &nbsp; &nbsp; case valor 1: <br>
+                        <br>
+                        &nbsp; &nbsp; break <br>
+                        &nbsp; &nbsp; case valor 2: <br>
+                        <br>
+                        &nbsp; &nbsp; break <br>
+                        &nbsp; &nbsp; case valor 2: <br>
+                        <br>
+                        &nbsp; &nbsp; break <br>
+                        &nbsp; &nbsp; default <br>
+                        &nbsp; }<br>
+                </code>
+                </p>
             </div>
 
         </article>
