@@ -96,6 +96,7 @@ ul, ol {
 ul li, ol li {
     font-size: 0.9em;
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 ul li {
