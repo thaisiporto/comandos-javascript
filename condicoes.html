@@ -87,35 +87,44 @@
                 <h3>Condição Múltipla</h3>
                 <p class="alinhadoEsq">
                     <code>
-                    switch() { &nbsp; <br>
-                        &nbsp; &nbsp; case valor 1: <br>
-                        <br>
+                    switch(mes) { &nbsp; <br>
+                        &nbsp; &nbsp; case "Fevereiro": <br>
+                        &nbsp; &nbsp; &nbsp; seuMes.innerHTML = `O mês de ${mesText} tem 28 dias em anos comuns e 29 dias em anos bissextos!`; <br>
                         &nbsp; &nbsp; break <br>
-                        &nbsp; &nbsp; case valor 2: <br>
-                        <br>
+                        &nbsp; &nbsp; case "Abril": <br>
+                        &nbsp; &nbsp; &nbsp; seuMes.innerHTML = `O mês de ${mesText} tem 30 dias!`; <br>
                         &nbsp; &nbsp; break <br>
-                        &nbsp; &nbsp; case valor 2: <br>
-                        <br>
+                        &nbsp; &nbsp; case "Junho": <br>
+                        &nbsp; &nbsp; &nbsp; seuMes.innerHTML = `O mês de ${mesText} tem 30 dias!`; <br>
                         &nbsp; &nbsp; break <br>
-                        &nbsp; &nbsp; default <br>
+                        &nbsp; &nbsp; case "Setembro": <br>
+                        &nbsp; &nbsp; &nbsp; seuMes.innerHTML = `O mês de ${mesText} tem 30 dias!`; <br>
+                        &nbsp; &nbsp; break <br>
+                        &nbsp; &nbsp; case "Novembro": <br>
+                        &nbsp; &nbsp; &nbsp; seuMes.innerHTML = `O mês de ${mesText} tem 30 dias!`; <br>
+                        &nbsp; &nbsp; break <br>
+                        &nbsp; &nbsp; default: <br>
+                        &nbsp; &nbsp; &nbsp; seuMes.innerHTML = `O mês de ${mesText} tem 31 dias!`; <br>
                         &nbsp; }<br>
                 </code>
                 </p>
-                <p><select name="mes" id="iMes">
-                    <option value="Jan">Janeiro</option>
-                    <option value="Fev">Fevereiro</option>
-                    <option value="Mar">Março</option>
-                    <option value="Abr">Abril</option>
-                    <option value="Mai">Maio</option>
-                    <option value="Jun">Junho</option>
-                    <option value="Jul">Julho </option>
-                    <option value="Ago">Julho</option>
-                    <option value="Set">Setembro</option>
-                    <option value="Out">Outubro</option>
-                    <option value="Nov">Novembro</option>
-                    <option value="Dez">Dezembro</option>
-                </select></p>
-                <p><input type="month" name="" id=""></p>
+                <p>Quantos dias tem cada mês?</p>
+                <select name="mes" id="iMes">
+                    <option value="Janeiro">Janeiro</option>
+                    <option value="Fevereiro">Fevereiro</option>
+                    <option value="Março">Março</option>
+                    <option value="Abril">Abril</option>
+                    <option value="Maio">Maio</option>
+                    <option value="Junho">Junho</option>
+                    <option value="Julho">Julho </option>
+                    <option value="Agosto">Agosto</option>
+                    <option value="Setembro">Setembro</option>
+                    <option value="Outubro">Outubro</option>
+                    <option value="Novembro">Novembro</option>
+                    <option value="Dezembro">Dezembro</option>
+                </select>
+                <input type="submit" value="Enviar" onclick="enviarMesM()" class="botaoTeste">
+                <p id="condMult" class="hideTeste" class="pDeTestes"></p>
             </div>
 
         </article>

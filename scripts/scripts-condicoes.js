@@ -18,11 +18,11 @@ function enviarVelocidadeC() {
 
     var numVelocidadeC = Number(velocidadeC.value);
 
+    suaVelocidadeC.style.display = "block";
     if (numVelocidadeC > 80) {
-        suaVelocidadeC.style.display = "block";
+
         suaVelocidadeC.innerHTML = "Você foi multado!";
     } else {
-        suaVelocidadeC.style.display = "block";
         suaVelocidadeC.innerHTML = "Você <strong>não</strong> foi multado!";
     }
 }
@@ -32,17 +32,44 @@ function enviarIdadeA() {
     var suaIdadeA = window.document.querySelector("p#condAnin");
 
     var numIdadeA = Number(idadeA.value);
+    suaIdadeA.style.display = "block";
 
     if (numIdadeA < 16) {  
-        suaIdadeA.style.display = "block";
         suaIdadeA.innerHTML = "Não vota!"  
       } else {  
         if (numIdadeA < 18 || numIdadeA > 65) {
-            suaIdadeA.style.display = "block";
             suaIdadeA.innerHTML = "Voto opcional!"
         } else {
-            suaIdadeA.style.display = "block";
             suaIdadeA.innerHTML = "Voto obrigatório!"
         }
       }
+}
+
+function enviarMesM() {
+    var mes = document.getElementById("iMes");
+    var seuMesM = window.document.querySelector("p#condMult");
+
+    var mesText = String(mes.value);
+    seuMesM.style.display = "block";
+
+    switch (mesText) {
+        case "Fevereiro":
+            seuMesM.innerHTML = `O mês de ${mesText} tem 28 dias em anos comuns e 29 dias em anos bissextos!`;
+        break
+        case "Abril":
+            seuMesM.innerText = `O mês de ${mesText} tem 30 dias!`;
+        break
+        case "Junho":
+            seuMesM.innerText = `O mês de ${mesText} tem 30 dias!`;
+        break
+        case "Setembro":
+            seuMesM.innerText = `O mês de ${mesText} tem 30 dias!`;
+        break
+        case "Novembro":
+            seuMesM.innerText = `O mês de ${mesText} tem 30 dias!`;
+        break
+        default:
+            seuMesM.innerHTML = `O mês de ${mesText} tem 31 dias!`;
+    }
+
 }
