@@ -90,7 +90,7 @@ main a:hover {
 
 /* Listas */
 ul, ol {
-    padding-left: 40px;
+    padding: 0 20px 0 30px;
 }
 
 ul li, ol li {
