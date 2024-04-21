@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color01:#0f172a;
+    --color02:#172a3a;
+    --color03:#e2e8f0;
+    --color04:#d2d9e2;
+    --color05:#f5f7fa;
+    --color06:#2d5270;
+    --colorHighlight1: #F2BE24;
+    --colorHighlight1Shadow: #d3a10b;
+    --colorHighlight2: #D94C1A;
+    --colorHighlight2Shadow: #ad380d;
+}
+
+input.botaoRes {
+    background-color: var(--colorHighlight1);
+    color: var(--color01);
+    border: none;
+    padding: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--colorHighlight1Shadow);
+}
+
+input.botaoRes:hover {
+    background-color: var(--colorHighlight1Shadow);
+    cursor: pointer;
+}
+
+p.resultado {
+    background-color: var(--color05);
+    color: var(--colorHighlight2);
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 500px) {
+    input.botaoRes {
+        display: block;
+        margin: 10px auto;
+    }
+}
