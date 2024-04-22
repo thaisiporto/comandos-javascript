@@ -16,31 +16,10 @@
     --colorHighlight2Shadow: #ad380d;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: var(--color01);
-    text-align: center;
-    text-transform: uppercase;
-    padding: 20px;
-    border-bottom: 4px solid var(--colorHighlight1);
-}
-
-body {
-    background-color: var(--color03);
-    color: var(--color01);
-    font-family: 'Poppins', "Open Sans", Arial, sans-serif;
-    border-bottom: 10px solid var(--colorHighlight1);
-}
-
 main {
     max-width: 700px;
-    margin: 10px auto;
-    padding: 15px;
 }
+
 /* Textos */
 main h1 {
     background-color: var(--colorHighlight1);
@@ -66,7 +45,7 @@ main h1:hover::after, main h2:hover::after, main h3:hover::after {
     content: "_";
 }
 
-p {
+main p {
     font-size: 14px;
     padding: 10px;
     text-align: justify;

@@ -18,6 +18,13 @@
     padding: 0;
 }
 
+body {
+    background-color: var(--color03);
+    color: var(--color01);
+    font-family: 'Poppins', "Open Sans", Arial, sans-serif;
+    border-bottom: 10px solid var(--colorHighlight1);
+}
+
 header {
     background-color: var(--color01);
     text-align: center;
@@ -40,20 +47,11 @@ header img {
     margin-bottom: -50px;
 }
 
-body {
-    background-color: var(--color03);
-    color: var(--color01);
-    font-family: 'Poppins', "Open Sans", Arial, sans-serif;
-    border-bottom: 10px solid var(--colorHighlight1);
-}
-
 main {
-    max-width: 800px;
     margin: 15px auto;
     padding: 15px;
 }
 
 main h1, main p {
     margin-bottom: 15px;
-    text-align: center;
 }

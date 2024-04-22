@@ -13,6 +13,14 @@
     --colorHighlight2: #D94C1A;
 }
 
+main {
+    max-width: 800px;
+}
+
+main h1, main p {
+    text-align: center;
+}
+
 main a.topic {
     display: inline-block;
     width: 375px;
