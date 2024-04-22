@@ -29,11 +29,6 @@ header {
     border-bottom: 4px solid var(--colorHighlight1);
 }
 
-header a {
-    color: var(--color03);
-    text-decoration: none;
-}
-
 body {
     background-color: var(--color03);
     color: var(--color01);
