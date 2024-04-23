@@ -52,6 +52,12 @@ main {
     padding: 15px;
 }
 
-main h1, main p {
-    margin-bottom: 15px;
+main {
+    max-width: 1100px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 15px;
 }
+
+
