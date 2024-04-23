@@ -52,6 +52,7 @@ main {
     text-align: center;
     box-sizing: border-box;
     margin: auto;
+    padding: 15px;
 }
 
 article {
