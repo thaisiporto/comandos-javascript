@@ -87,8 +87,13 @@ section ul li {
 
 section ul li:hover {
     background-color: var(--color04);
+    cursor: pointer;
 }
 
+section ul li a {
+    color: var(--color01);
+    text-decoration: none;
+}
 
 i#burgerMenu {
     display: none;
