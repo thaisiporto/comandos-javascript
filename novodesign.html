@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/novo-style.css">
     <link rel="shortcut icon" href="images/javascript.svg">
-
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <title>Novo Design</title>
 </head>
@@ -43,33 +42,17 @@
         </article>
         <section id="menuItems">
                 <ul id="menuOpen">
-                    <li>Introdução</li>
-                    <li>Variáveis</li>
-                    <li>DOM</li>
-                    <li>Comandos Básicos</li>
-                    <li>Operadores</li>
-                    <li>Cálculos básicos</li>
-                    <li>Condições</li>
+                    <li><a href="introducao.html">Introdução</a></li>
+                    <li><a href="variaveis.html">Variáveis</a></li>
+                    <li><a href="dom.html">DOM</a></li>
+                    <li><a href="comandos.html">Comandos Básicos</a></li>
+                    <li><a href="operadores.html">Operadores</a></li>
+                    <li><a href="calculos.html">Cálculos básicos</a></li>
+                    <li><a href="condicoes.html">Condições</a></li>
                 </ul>
                 <i class="material-symbols-outlined" id="burgerMenu" onclick="clickMenu()">menu</i>
         </section>
     </main>
-    <script>
-        function clickMenu() {
-            if (menuOpen.style.display == 'block') {
-                menuOpen.style.display = 'none'
-            } else {
-                menuOpen.style.display = 'block';
-            }
-        }
-    
-        function showMenu() {
-            if (window.innerWidth >= 700) {
-                menuOpen.style.display = 'block'
-            } else {
-                menuOpen.style.display = 'none'
-            }
-        }
-    </script>
+    <script src="scripts/script-layout.js"></script>
 </body>
 </html>
