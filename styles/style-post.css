@@ -17,78 +17,80 @@
 }
 
 main {
-    max-width: 700px;
+    max-width: 1100px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-/* Textos */
-main h1 {
+article {
+    max-width: 700px;
+    display: inline-block;
+    padding: 10px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+/* Textos */article h1 {
     background-color: var(--colorHighlight1);
     padding: 10px 30px;
     font-size: 24px;
     color: var(--color05);
     text-transform: uppercase;
 }
-
-main h2 {
+article h2 {
     color: var(--colorHighlight2);
     margin: 20px;
     font-size: 1.3em;
 }
-
-main h3 {
+article h3 {
     color: var(--colorHighlight1);
     margin: 20px;
     font-size: 1.1em;
 }
-
-main h1:hover::after, main h2:hover::after, main h3:hover::after {
+article h1:hover::after, main h2:hover::after, main h3:hover::after {
     content: "_";
 }
-
-main p {
+article p {
     font-size: 14px;
     padding: 10px;
     text-align: justify;
 }
-
-main a {
+article a {
     color: var(--color02);
     text-decoration: none;
     font-size: 12px;
     font-weight: 600;
 }
-
-main a:hover {
+article a:hover {
     text-decoration: underline;
 }
 
 /* Listas */
-ul, ol {
+article ul, ol {
     padding: 0 20px 0 30px;
 }
 
-ul li, ol li {
+article ul li, ol li {
     font-size: 0.9em;
     margin-bottom: 10px;
     text-align: justify;
 }
 
-ul li {
+article ul li {
     list-style-type: circle;
 }
 
-ol li::marker {
+article ol li::marker {
     color: var(--colorHighlight1);
     font-weight: 700;
     font-size: 14px;
 }
 
-ul li span {
+article ul li span {
     font-size: 12px;
 }
 
-
-li code {
+article li code {
     font-size: 14px;
     color: var(--color06);
     background-color: var(--color04);
@@ -97,18 +99,18 @@ li code {
     margin-right: 5px;
 }   
 
-li span.destaque {
+article li span.destaque {
     text-decoration: var(--colorHighlight1) underline;
     font-size: 1em;
 }
 
-li.subTopico {
+article li.subTopico {
     list-style-type: disc;
     margin-left: 15px;
 }
 
 /* Códigos e Comandos */
-div.comando, div.alinhadoEsq {
+article div.comando, div.alinhadoEsq {
     max-width: 100%;
     border-radius: 5px;
     border: 1px solid var(--colorHighlight1);
@@ -117,13 +119,13 @@ div.comando, div.alinhadoEsq {
     text-align: center;
 }
 
-div.comando p, input {
+article div.comando p, input {
     margin: 10px auto;
     font-size: 14px;
     text-align: center;
 }
 
-p.pDeTestes {
+article p.pDeTestes {
     background-color: var(--color04);
     color: var(--color02);
     font-size: 0.8em;
@@ -133,11 +135,11 @@ p.pDeTestes {
     cursor: pointer;
 }
 
-p.hideTeste {
+article p.hideTeste {
     display: none;
 }
 
-input[type="number"], input[type="text"], select {
+article input[type="number"], input[type="text"], select {
     height: 30px;
     padding: 5px;
     border: 1px solid #ccc;
@@ -145,7 +147,7 @@ input[type="number"], input[type="text"], select {
     margin: 5px;
 }
 
-input.botaoTeste {
+article input.botaoTeste {
     background-color: var(--colorHighlight2);
     color:var(--color05);
     border: none;
@@ -155,7 +157,7 @@ input.botaoTeste {
     border-bottom: 2px solid var(--colorHighlight2Shadow);
 }
 
-input.botaoTeste:hover {
+article input.botaoTeste:hover {
     background-color:var(--colorHighlight2Shadow);
     color: var(--color03);
     cursor: pointer;
@@ -170,47 +172,129 @@ input.botaoTeste:hover {
     padding: 5px 10px;
 }
 
-div.comando p.alinhadoEsq {
+article div.comando p.alinhadoEsq {
     max-width: 410px;
     text-align: left;
 }
 
-div.codigo {
+article div.codigo {
     text-align: center;
 }
 
 /* Imagens */
 
-main img {
+article img {
     width: 100%;
 }
 
-main img.imagem50 {
+article img.imagem50 {
     display: block;
     margin: 15px auto;
     width: 50%;
 }
 
-
 @media screen and (min-width:600px) {
-    br.breakCode {
+    article br.breakCode {
         display: none;
     }
 }
 
 @media screen and (max-width:600px) {
-    p#links {
+    article p#links {
         margin-top: 20px;
     }
-    p#links a {
+    article p#links a {
         display: block;
         margin: 0;
         line-height: 0.5em;
     }
 }
 
-/* Navegação */
+/* Menu Sidebar */
 
+section {
+    display: block;
+    margin: 10px;
+    min-width: 290px;
+    text-align: left;
+    box-sizing: border-box;
+    float: right;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+}
+
+section ul {
+    list-style-type: none;
+}
+
+section ul li {
+    font-size: 0.9em;
+    padding: 15px 20px;
+    border: 1px solid var(--color04);
+}
+
+section ul li:hover {
+    background-color: var(--color04);
+    cursor: pointer;
+}
+
+section ul li a {
+    color: var(--color01);
+    text-decoration: none;
+}
+
+section i#burgerMenu {
+    display: none;
+}
+
+@media screen and (min-width: 771px) and (max-width: 1079px) {
+    main {
+        max-width: 900px;
+    }
+    article {
+        max-width: 500px;
+    }
+
+    section {
+        min-width: 220px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    section {
+        float: none;
+        display: block;
+        background-color: var(--color03);
+        text-align: center;
+        position: -webkit-sticky;
+        position: sticky;
+        bottom: 5px;
+        transition: 1.5s ease;
+        border: 2px solid #eee;
+        border-radius: 3px;
+        box-shadow: 0 0 5px #aaa;
+    }
+
+    section ul {
+        transition: 1.5s ease;
+    }
+
+    section ul li {
+        border: none;
+        border-bottom: 1px solid var(--color04);
+    }
+    
+    section i#burgerMenu {
+        display: block;
+        background-color: var(--color01);
+        color: var(--colorHighlight1);
+        padding: 10px;
+    }
+}
+
+
+/* Navegação */
 footer {
     padding: 30px;
     max-width: 700px;
