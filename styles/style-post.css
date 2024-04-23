@@ -242,6 +242,7 @@ section ul li:hover {
 section ul li a {
     color: var(--color01);
     text-decoration: none;
+    display: block;
 }
 
 section i#burgerMenu {
