@@ -5,25 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/novo-style.css">
-    <link rel="stylesheet" href="styles/style-index.css">
     <link rel="shortcut icon" href="images/javascript.svg">
-    <title>Estudos em Javascript</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Novo Design</title>
 </head>
-<body>
+<body onresize="showMenu()">
     <header>
         <img src="Hand coding-bro.svg" alt="">
         <h1><a href="index.html">Estudos em Javascript</a></h1>
     </header>
     <main>
-        <h1>Aprendendo Javascript</h1>
-        <p>Este blog contém algumas anotações dos conteúdos que aprendi na minha trajetória de estudo em Javascript.</p>
-        <a href="introducao.html" class="topic">Introdução</a>
-        <a href="variaveis.html" class="topic">Variáveis</a>
-        <a href="dom.html" class="topic">DOM</a>
-        <a href="comandos.html" class="topic">Comandos Básicos</a>
-        <a href="operadores.html" class="topic">Operadores</a>
-        <a href="calculos.html" class="topic">Cálculos Básicos</a>
-        <a href="condicoes.html" class="topic">Condições</a>
+        <article>
+            <h1>Introdução</h1>
+            <h2>O que é Javascript?</h2>
+            <p>É a linguagem de programação mais popular do mundo, é considerada uma tecnologia fundamental, juntamente com HTML e CSS, da World Wide Web.</p>
+            <p>O Javascript permite maior interatividade em uma página, como sliders, alertas, pop-ups e interações de clique.</p>
+            <p>Fonte: <a href="https://roadmap.sh/javascript" target="_blank">Roadmaps</a> </p>
+            <p>Javascript é uma linguagem de programação considerada <em>não compilada</em>, ou <em>interpretada</em>, ou seja, o navegador executa diretamente os scripts linha-a-linha.</p>
+            <p>O javascript é "<em>case sensitive</em>", as letras maiúsculas e minúsculas fazem diferença.</p>
+
+            <h2>Como adicionar scripts</h2>
+            <p>Os scripts podem ser adicionados em um documento HTML, dentro tag <code><strong>&lt;script&gt; &lt;/script&gt;</strong></code> e localizada acima da tag de fechamento <code><strong>&lt;/body&gt;</strong></code>.</p>
+            <p>O Javascript também pode ser adicionado em um documento separado e anexado acima da tag de fechamento <code><strong>&lt;/body&gt;</strong></code>:</p>
+            <div class="codigo"><code class="codigo">&lt;script src="<strong>scripts/my-scripts.js</strong>"&gt;&nbsp;&lt;/script&gt;</code></div>
+
+            <h2>Tipos de Dados / Valores</h2>
+            <ul>
+                <li><strong>Number (Número)</strong>: Números inteiros ou com casas decimais.</li>
+                <li><strong>String</strong>: Cadeia/agrupamento de caracteres (letras, números, símbolos, espaços, etc). Devem estar entre aspas simples, duplas ou crases.</li>
+                <li><strong>Boolean (Booleano)</strong>: Tipo de dado com apenas dois valores possíveis: verdadeiro (true) ou falso (false).</li>
+                <li><strong>null (Nulo)</strong>: Aparecendo sempre em letras minúsculas, representa um valor inexistente.</li>
+                <li><strong>undefined (Indefinido)</strong>: Também escrito em letras minúsculas, aparece quando uma variável não recebeu um valor.</li>
+                <li><strong>Symbol (Símbolo)</strong>: É um recurso mais recente no ECMAScript, utilizado em códigos mais avançados. Ele armazena um valor único e imutável.</li>
+                <li><strong>Object (Objeto)</strong>: Diferente dos tipos de dados anteriores, o object não é um tipo primitivo. Ele pode ser descrito como uma coleção de dados e propriedades.</li>
+            </ul>
+        </article>
+        <section id="menuItems">
+                <ul id="menuOpen">
+                    <li>Introdução</li>
+                    <li>Variáveis</li>
+                    <li>DOM</li>
+                    <li>Comandos Básicos</li>
+                    <li>Operadores</li>
+                    <li>Cálculos básicos</li>
+                    <li>Condições</li>
+                </ul>
+                <i class="material-symbols-outlined" id="burgerMenu" onclick="clickMenu()">menu</i>
+        </section>
     </main>
+    <script>
+        function clickMenu() {
+            if (menuOpen.style.display == 'block') {
+                menuOpen.style.display = 'none'
+            } else {
+                menuOpen.style.display = 'block';
+            }
+        }
+    
+        function showMenu() {
+            if (window.innerWidth >= 700) {
+                menuOpen.style.display = 'block'
+            } else {
+                menuOpen.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
