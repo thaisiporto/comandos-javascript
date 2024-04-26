@@ -292,6 +292,13 @@ section i#burgerMenu {
         color: var(--colorHighlight1);
         padding: 10px;
     }
+
+    section i#closeMenu {
+        display: none;
+        background-color: var(--color01);
+        color: var(--colorHighlight2);
+        padding: 10px;
+    }
 }
 
 
