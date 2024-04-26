@@ -114,8 +114,8 @@ i#burgerMenu {
         box-shadow: 0 0 5px #aaa;
     }
 
-    section ul {
-        transition: 1.5s ease;
+    section ul#menuOpen{
+        display: none;
     }
 
     section ul li {
