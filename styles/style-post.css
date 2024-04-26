@@ -285,19 +285,20 @@ section i#burgerMenu {
         border: none;
         border-bottom: 1px solid var(--color04);
     }
+
+    section div#menuClick {
+        background-color: var(--color01);
+        padding: 10px;
+    }
     
     section i#burgerMenu {
         display: block;
-        background-color: var(--color01);
         color: var(--colorHighlight1);
-        padding: 10px;
     }
 
     section i#closeMenu {
         display: none;
-        background-color: var(--color01);
         color: var(--colorHighlight2);
-        padding: 10px;
     }
 }
 
