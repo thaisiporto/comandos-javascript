@@ -287,6 +287,7 @@ section div#menuClick {
     }
 
     section div#menuClick {
+        display: block;
         background-color: var(--color01);
         padding: 10px;
     }
