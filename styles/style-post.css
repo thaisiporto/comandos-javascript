@@ -245,7 +245,7 @@ section ul li a {
     display: block;
 }
 
-section i#burgerMenu {
+section div#menuClick {
     display: none;
 }
 
