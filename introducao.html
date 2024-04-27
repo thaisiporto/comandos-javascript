@@ -31,6 +31,7 @@
             <div class="codigo"><code class="codigo">&lt;script src="<strong>scripts/my-scripts.js</strong>"&gt;&nbsp;&lt;/script&gt;</code></div>
 
             <h2>Tipos de Dados / Valores</h2>
+            <p>Segundo o padrão ECMAScript 6 mais recente, são sete os tipos de dados, sendo seis deles chamados de dados primitivos.</p>
             <ul>
                 <li><strong>Number (Número)</strong>: Números inteiros ou com casas decimais.</li>
                 <li><strong>String</strong>: Cadeia/agrupamento de caracteres (letras, números, símbolos, espaços, etc). Devem estar entre aspas simples, duplas ou crases.</li>
@@ -40,6 +41,27 @@
                 <li><strong>Symbol (Símbolo)</strong>: É um recurso mais recente no ECMAScript, utilizado em códigos mais avançados. Ele armazena um valor único e imutável.</li>
                 <li><strong>Object (Objeto)</strong>: Diferente dos tipos de dados anteriores, o object não é um tipo primitivo. Ele pode ser descrito como uma coleção de dados e propriedades.</li>
             </ul>
+
+            <h2>Comentários</h2>
+            <p>Para organização do código, é possível se deixar notas textuais. Os comentários são informações explicativas a respeito da construção e organização, alguma função utilizada, instruções ou dicas, funcionamento dos blocos ou regras aplicadas, seja para o autor do código entendê-lo quando retornar após algum tempo aquele arquivo, quanto para códigos colaborativos.</p>
+            <p>Essas referências têm somente fim informativo e não são interpretadas pelo navegador.</p>
+            <ul>
+                <li><strong>Comentários linha única: </strong>são aplicados utilizando duas barras <code>//</code>. Esse tipo de comentário pode ser adicionado em uma nova linha ou <u><em>após um código funcional, mas nunca antes dele</em></u>, uma vez que tudo depois de <code>//</code> é lido como um comentário e ele não possui fechamento, terminando somente na quebra de linha.
+                    <p class="codeCenter"><code>window.alert("Alerta!"); <span class="comentario">// Dispara uma mensagem de alerta</span></code></p>
+                </li>
+                <li><strong>Comentários de múltiplas linhas: </strong>são criados a partir de uma barra e um asterisco <code>/*</code> e possuem fechamento <code>*/</code>. Podem ser inseridas várias quebras de linha nesse tipo de comentário, uma vez que ele só é finalizado com o fechamento. Tudo entre <code>/*</code> e <code>*/</code> é um comentário, portanto também <u><em>pode ser adicionado no meio das linhas de códigos</em></u>.
+                    <p class="codeCenter"><code>window.alert(<span class="comentario">/*Dispara uma mensagem de alerta*/</span> "Alerta!");</code></p>
+                </li>
+            </ul>
+
+            <h2>Console</h2>
+            <p>O console é um painel onde os comandos ou expressões são executados e interpretados conforme são digitados.</p>
+            <p>No JavaScript, console trata-se de um objeto. Pode ser embutido a ele, principalmente, o método <code>.log()</code>.</p>
+            <p>O método <code>console.log()</code> serve para exibir (imprimir ou registrar) uma mensagem, variável, parâmetro, etc, dentro da ferramenta do desenvolvedor. Esse método é muito utilizado com o fim de teste e depuração (localização e correção de erros) do código.</p>
+                <p class="codeCenter"><code>console.log("Essa mensagem será exibida!");</code></p>
+                <p id="consoleTeste" class="resultado"></p>
+                <p class="codeCenter"><input type="button" value="Executar" onclick="consoleTeste()" class="botaoTeste"></p>
+
         </article>
         <section id="menuItems">
             <ul id="menuOpen">
@@ -67,6 +89,7 @@
     </footer>
 
 <script src="scripts/script-layout.js"></script>
+<script src="scripts/script-introducao.js"></script>
 </body>
 </html>
 
