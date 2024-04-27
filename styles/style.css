@@ -59,4 +59,12 @@ main {
     margin: auto;
 }
 
+p.codeCenter {
+    text-align: center;
+}
+
+.comentario {
+    color: #D94C1A;
+}
+
 
