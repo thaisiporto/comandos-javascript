@@ -90,14 +90,7 @@ article ul li span {
     font-size: 12px;
 }
 
-article li code {
-    font-size: 14px;
-    color: var(--color06);
-    background-color: var(--color04);
-    padding: 0 5px;
-    border-bottom: 1px solid var(--color06);
-    margin-right: 5px;
-}   
+
 
 article li span.destaque {
     text-decoration: var(--colorHighlight1) underline;
@@ -117,6 +110,25 @@ article div.comando, div.alinhadoEsq {
     margin: 20px auto;
     padding: 20px;
     text-align: center;
+}
+
+article code {
+    font-size: 14px;
+    color: var(--color06);
+    background-color: var(--color04);
+    padding: 0 5px;
+    border-bottom: 1px solid var(--color06);
+    margin-right: 5px;
+}   
+
+p.resultado {
+    text-align: center;
+    background-color: var(--color05);
+    color: var(--colorHighlight2);
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-weight: 600;
 }
 
 article div.comando p, input {
