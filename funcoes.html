@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-post.css">
+    <link rel="stylesheet" href="styles/style-dom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- FIM DOS ESTILOS -->
+    <link rel="shortcut icon" href="images/javascript.svg">
+    <title>Introdução ao DOM | Javascript</title>
+</head>
+<body>
+    <header>
+        <img src="Hand coding-bro.svg" alt="Ilustração de um computador">
+        <h1><a href="index.html">Estudos em Javascript</a></h1>
+    </header>
+    <main>
+        <article>
+            <h3>Funções</h3>
+            <p><strong>Funções (function): </strong>comandos executados somente quando eventos DOM forem ativados</p>
+            <p>Funções devem receber nomes:</p>
+            <div class="alinhadoEsq"><code>function nomeDaAcao(parametros adicionais) { <em>bloco</em> }</code></div>
+            <p><strong>Bloco:</strong> conjunto de linhas que formam um comando, delimitado por chaves <code>{}</code>.</p>
+            <h3>Adicionando Eventos</h3>
+            <p>Funções podem ser adicionadas no html ou no script.</p>
+            <div class="alinhadoEsq">
+                <h3>No html:</h3>
+                <p>
+                    <code>&lt;p id="cliqueAqui" <br class="breakCode">onclick="clicar()"&gt;Clique aqui!&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <code>
+                        &lt;script&gt;<br>
+                        &nbsp; function clicar() { &nbsp;<br>
+                            &nbsp; &nbsp; var clck = window.document.<br class="breakCode">querySelector("p#cliqueAqui");&nbsp;<br>
+                            &nbsp; &nbsp; clck.innerText = "Clicou!";&nbsp;<br>
+                            &nbsp; &nbsp; clck.style.background = "#7c9cc7";&nbsp;<br>
+                        &nbsp; }&nbsp;<br>
+                        &nbsp;&lt;/script&gt;<br>
+                    </code>
+                </p>
+                <p class="cliqueAqui" id="add1" onclick="clicar()" ondblclick="dClicar()">Clique aqui!</p>
+            </div>
+            <div class="alinhadoEsq">
+                <h3>No script:</h3>
+                <p>
+                    <code>&lt;p id="cliqueAqui"&gt;Clique aqui!&lt;/p&gt;</code>
+                </p>
+                <p>
+                    <code>
+                        &lt;script&gt; &nbsp;<br>
+                        &nbsp; var clck = window.document.<br class="breakCode">querySelector("p#cliqueAqui");&nbsp;<br>
+                        &nbsp; clck.addEventListener("click", clicar);&nbsp;<br>
+                        &nbsp; function clicar() { &nbsp;<br>
+                            &nbsp; &nbsp; clck.innerText = "Clicou!";&nbsp;<br>
+                            &nbsp; &nbsp; clck.style.background = "#ffc0cb";&nbsp;<br>
+                        &nbsp; }&nbsp;<br>
+                        &nbsp;&lt;/script&gt;<br>
+                    </code>
+                </p>
+                <p class="cliqueAqui" id="add2">Clique aqui!</p>
+                </div>
+        </article>
+        <section id="menuItems">
+            <ul id="menuOpen">
+                <li><a href="introducao.html">Introdução</a></li>
+                <li><a href="variaveis.html">Variáveis</a></li>
+                <li><a href="dom.html">DOM</a></li>
+                <li><a href="comandos.html">Comandos Básicos</a></li>
+                <li><a href="operadores.html">Operadores</a></li>
+                <li><a href="calculos.html">Cálculos básicos</a></li>
+                <li><a href="condicoes.html">Condições</a></li>
+            </ul>
+            <div onclick="clickMenu()" id="menuClick">
+                <i class="material-symbols-outlined" id="burgerMenu">menu</i>
+                <i class="material-symbols-outlined" id="closeMenu">close</i>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="variaveis.html" class="topic" id="link1">
+            <i class="material-symbols-outlined">keyboard_double_arrow_left</i>
+            Variáveis</a>
+        <a href="comandos.html" class="topic" id="link2">
+            Comandos Básicos 
+            <i class="material-symbols-outlined">keyboard_double_arrow_right</i> </a>
+    </footer>
+
+<!-- SCRIPTS -->
+<script src="scripts/script-layout.js"></script>
+<script src="scripts/scripts-dom.js"></script>
+<!-- FIM SCRIPTS -->
+</body>
+</html>
