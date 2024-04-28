@@ -64,7 +64,7 @@ p.codeCenter {
 }
 
 .comentario {
-    color: #D94C1A;
+    color: var(--colorHighlight2);
 }
 
 
