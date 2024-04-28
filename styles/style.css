@@ -37,6 +37,7 @@ header a {
     color: var(--color03);
     text-decoration: none;
     padding: 5px;
+    line-height: 1.8em;
     background-color: var(--color01);
     border-top: 2px solid var(--colorHighlight1);
     text-shadow: 0px 0px 5px #000;
