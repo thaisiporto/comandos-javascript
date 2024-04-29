@@ -25,9 +25,9 @@
             <p>Um objeto é um conjunto/coleção de dados e propriedades, ou seja, ela pode ser uma variável e todas as suas características.</p>
             <p><code>
                 let pizza = { &nbsp;<br>
-                &nbsp; &nbsp; sabor = "Calabresa", &nbsp; <br>
-                &nbsp; &nbsp; tamanho = "Grande", &nbsp;<br>
-                &nbsp; &nbsp; borda = "Catupiry"; &nbsp; <br>
+                &nbsp; &nbsp; sabor: "Calabresa", &nbsp; <br>
+                &nbsp; &nbsp; tamanho: "Grande"; &nbsp;<br>
+                &nbsp; &nbsp; borda: "Catupiry"; &nbsp; <br>
                  };
             </code></p>
 
@@ -37,7 +37,7 @@
             <p><code>
                 let pizza = new Object(); &nbsp;<br>
                 pizza.sabor = "Calabresa"; &nbsp;<br>
-                pizza.tamanho = "Grande", &nbsp;<br>
+                pizza.tamanho = "Grande"; &nbsp;<br>
                 pizza.borda = "Catupiry";                
             </code></p>
 
@@ -61,6 +61,39 @@
 
             <h2>Propriedades</h2>
             <p>As propriedades, como visto acima, são as características/atributos de um objeto. As propriedades são constituídas de um nome (também chamado de chave) e um valor, podendo ser qualquer tipo de dado JavaScript, como um string, número e até uma função (nesse caso o valor passa a se chamar método).</p>
+
+            <h3>Como acessar propriedades</h3>
+            <p><strong>Modo 1</strong></p>
+            <p><code>
+                let pizza = { &nbsp;<br>
+                &nbsp; &nbsp; sabor: "calabresa", &nbsp; <br>
+                &nbsp; &nbsp; tamanho: "grande", &nbsp;<br>
+                &nbsp; &nbsp; borda: "catupiry" &nbsp; <br>
+                 };
+            </code></p>
+            <p><code>console.log("Gostaria de pedir uma pizza " + pizza.tamanho + " de " + pizza.sabor + " com borda de " + pizza.borda + ".");
+            </code></p>
+
+            <p class="resultado" id="pizzaSalgada"></p>
+            <p class="codeCenter"><input type="button" value="Mostrar" onclick="pizSal()" class="botaoTeste"></p>
+
+            <p><strong>Modo 2</strong></p>
+            <p><code>
+                    let pizza = { &nbsp;<br>
+                        &nbsp; &nbsp; sabor: "brigadeiro", &nbsp; <br>
+                        &nbsp; &nbsp; tamanho: "broto", &nbsp;<br>
+                        &nbsp; &nbsp; borda: "doce de leite" &nbsp; <br>
+                         };  
+            </code></p>
+            <p><code>console.log("E também uma " + pizza[tamanho] + " de " + pizza[sabor] + " com borda de " + pizza[borda] + ".");
+            </code></p>
+
+            <p class="resultado" id="pizzaDoce"></p>
+            <p class="codeCenter"><input type="button" value="Mostrar" onclick="pizDoc()" class="botaoTeste"></p>
+
+            <p>Nessas duas maneiras de acessar propriedades, é possível também utilizar o template string para concatenar as informações.</p>
+            <p><code>`Minha pizza preferida é de ${pizza.sabor"}.´</code></p>
+            <p><code>`Eu não gosto de pizza de ${pizza["sabor"]}.´</code></p>
         </article>
         <section id="menuItems">
             <ul id="menuOpen">
@@ -89,7 +122,7 @@
 
 <!-- SCRIPTS -->
 <script src="scripts/script-layout.js"></script>
-<script src="scripts/scripts-dom.js"></script>
+<script src="scripts/scripts-objetos.js"></script>
 <!-- FIM SCRIPTS -->
 </body>
 </html>
