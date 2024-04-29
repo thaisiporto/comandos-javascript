@@ -138,8 +138,7 @@ i#burgerMenu {
 
     iframe#menuOpen {
         width: 100%;
-        min-height: 300px;
-        max-height: 75vh;
+        height: 75vh;
         overflow-y: scroll;
     }
 
