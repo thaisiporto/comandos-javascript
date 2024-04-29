@@ -261,7 +261,7 @@ section div#menuClick {
     display: none;
 }
 
-@media screen and (min-width: 771px) and (max-width: 1079px) {
+@media screen and (min-width: 831px) and (max-width: 1079px) {
     main {
         max-width: 900px;
     }
@@ -274,7 +274,7 @@ section div#menuClick {
     }
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:830px) {
     section {
         float: none;
         display: block;
