@@ -11,7 +11,7 @@
 </head>
 <body onresize="showMenu()">
     <header>
-        <img src="Hand coding-bro.svg" alt="">
+        <img src="images/header-image.svg" alt="">
         <h1><a href="index.html">Estudos em Javascript</a></h1>
     </header>
     <main>
@@ -41,17 +41,12 @@
             </ul>
         </article>
         <section id="menuItems">
-                <ul id="menuOpen">
-                    <li><a href="introducao.html">Introdução</a></li>
-                    <li><a href="variaveis.html">Variáveis</a></li>
-                    <li><a href="dom.html">DOM</a></li>
-                    <li><a href="comandos.html">Comandos Básicos</a></li>
-                    <li><a href="operadores.html">Operadores</a></li>
-                    <li><a href="calculos.html">Cálculos básicos</a></li>
-                    <li><a href="condicoes.html">Condições</a></li>
-                </ul>
-                <i class="material-symbols-outlined" id="burgerMenu" onclick="clickMenu()">menu</i>
-        </section>
+            <iframe id="menuOpen" src="menu.html" frameborder="0"></iframe>
+            <div onclick="clickMenu()" id="menuClick">
+                <i class="material-symbols-outlined" id="burgerMenu">menu</i>
+                <i class="material-symbols-outlined" id="closeMenu">close</i>
+            </div>
+    </section>
     </main>
     <script src="scripts/script-layout.js"></script>
 </body>
