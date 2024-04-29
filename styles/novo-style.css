@@ -75,6 +75,11 @@ section {
     top: 10px;
 }
 
+iframe#menuOpen {
+    min-width: 290px;
+    height: 100vh;
+}
+
 section ul {
     list-style-type: none;
 }
@@ -93,13 +98,31 @@ section ul li:hover {
 section ul li a {
     color: var(--color01);
     text-decoration: none;
+    display: block;
+}
+
+section div#menuClick {
+    display: none;
 }
 
 i#burgerMenu {
     display: none;
 }
 
-@media screen and (max-width:700px) {
+@media screen and (min-width: 851px) and (max-width: 1079px) {
+    main {
+        max-width: 900px;
+    }
+    article {
+        max-width: 500px;
+    }
+    section {
+        min-width: 220px;
+    }
+}
+
+
+@media screen and (max-width:850px) {
     section {
         float: none;
         display: block;
@@ -108,13 +131,18 @@ i#burgerMenu {
         position: -webkit-sticky;
         position: sticky;
         bottom: 5px;
-        transition: 1.5s ease;
         border: 2px solid #eee;
         border-radius: 3px;
         box-shadow: 0 0 5px #aaa;
     }
 
-    section ul#menuOpen{
+    iframe#menuOpen {
+        width: 100%;
+        height: 75vh;
+        overflow-y: scroll;
+    }
+
+    section iframe#menuOpen{
         display: none;
     }
 
@@ -122,12 +150,21 @@ i#burgerMenu {
         border: none;
         border-bottom: 1px solid var(--color04);
     }
-    
-    i#burgerMenu {
+
+    section div#menuClick {
         display: block;
         background-color: var(--color01);
-        color: var(--colorHighlight1);
         padding: 10px;
     }
+    
+    section i#burgerMenu {
+        display: block;
+        color: var(--colorHighlight1);
+    }
 
+    section i#closeMenu {
+        display: none;
+        color: var(--colorHighlight2);
+    }
 }
+
