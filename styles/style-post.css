@@ -283,7 +283,6 @@ section div#menuClick {
         position: -webkit-sticky;
         position: sticky;
         bottom: 5px;
-        transition: 1.5s ease;
         border: 2px solid #eee;
         border-radius: 3px;
         box-shadow: 0 0 5px #aaa;
