@@ -7,10 +7,14 @@
 :root {
     --color01:#0f172a;
     --color02:#172a3a;
-    --color03:#e2e8f0;
+    --color03:#f0f0f0;
     --color04:#d2d9e2;
+    --color05:#f5f7fa;
+    --color06:#2d5270;
     --colorHighlight1: #F2BE24;
+    --colorHighlight1Shadow: #d3a10b;
     --colorHighlight2: #D94C1A;
+    --colorHighlight2Shadow: #ad380d;
 }
 
 main {
