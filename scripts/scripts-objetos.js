@@ -19,3 +19,18 @@ function pizDoc() {
 
     pedido2.innerHTML = `E também uma <u>${pizza["tamanho"]}</u> de <u>${pizza["sabor"]}</u> com borda de <u>${pizza["borda"]}</u>.`
  }
+
+ function pizzaPedido() {
+    let pizza = {
+        sabor: "calabresa",
+        tamanho: "grande",
+        borda: "catupiry",
+        fazerPedido: function() {
+            return "Olá! Quero pedir uma pizza de " + "<u>" + pizza.sabor + "</u>" + "."
+        }
+    }
+
+    let pedido3 = window.document.querySelector("p#pizzaPedido");
+        
+    pedido3.innerHTML = pizza.fazerPedido();        
+ }
