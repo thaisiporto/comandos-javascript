@@ -95,7 +95,37 @@
             <p><code>`Minha pizza preferida é de ${pizza.sabor"}.´</code></p>
             <p><code>`Eu não gosto de pizza de ${pizza["sabor"]}.´</code></p>
 
-        <h2></h2>
+        <h2>Métodos</h2>
+        <p>Métodos são ações que podem ser realizadas nas strings, ou também propriedades do objeto em forma de função.</p>
+        <p>Podemos dizer que a estrutura de um método é igual ao de uma propriedade, a única diferença é a existência dos parênteses junto ao valor, que o define como uma função.</p>
+        <p><code>
+            let pizza = { &nbsp; <br>
+                &nbsp; &nbsp; sabor: "calabresa", &nbsp; <br>
+                &nbsp; &nbsp; tamanho: "grande", &nbsp; <br>
+                &nbsp; &nbsp; borda: "catupiry" &nbsp; <br>
+                &nbsp; &nbsp; fazerPedido: function() { &nbsp; <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; return "Olá! Quero pedir uma pizza de " + pizza.sabor +  "." &nbsp; <br>
+                &nbsp; &nbsp; } &nbsp; <br>
+            };
+        </code></p>
+
+        <p class="resultado" id="pizzaPedido"></p>
+        <p class="codeCenter"><input type="button" value="Mostrar" onclick="pizzaPedido()" class="botaoTeste"></p>
+
+        <p>O JavaScript possui também alguns métodos primitivos, que podem retornar características das strings ou modificá-las (criando uma nova string, sem alterar a original).
+        </p>
+
+        <p>Alguns desses métodos nativos são:
+        </p>
+        <ul>
+            <li><strong><code>lenght</code></strong> retorna a quantidade de caracteres em uma string.</li>
+            <li><strong><code>trim()</code></strong> retorna a quantidade de caracteres sem os espaços.</li>
+            <li><strong><code>toUpperCase()</code></strong> converte o texto para letras maiúsculas.</li>
+            <li><strong><code>toLowerCase()</code></strong> converte o texto para letras minúsculas.</li>
+            <li><strong><code>repeat()</code></strong> retorna a quantidade definida de cópias da string.</li>
+            <li><a href="https://www.w3schools.com/js/js_string_methods.asp" target="_blank">Lista de métodos de String Primitivos – W3Schools</a></li>
+        </ul>
+
         </article>
         <section id="menuItems">
             <ul id="menuOpen">
