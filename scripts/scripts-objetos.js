@@ -70,7 +70,7 @@ function pizDoc() {
     let sqrtNumber = Math.sqrt(numberSqrt.value);
     let mathSqrt = window.document.querySelector("span#mSqrt");
 
-    mathSqrt.innerHTML = "&nbsp; &nbsp" + sqrtNumber.toFixed(2);
+    mathSqrt.innerHTML = "&nbsp; &nbsp" + sqrtNumber.toFixed(1);
  }
 
  function mRandom() {
