@@ -123,6 +123,11 @@ article input[type="number"], input[type="text"], select {
     margin: 5px;
 }
 
+article input.inputNumbers {
+    height: 20px;
+    width:50px;
+}
+
 article input.botaoTeste {
     background-color: var(--colorHighlight2);
     color:var(--color05);
@@ -134,7 +139,7 @@ article input.botaoTeste {
 }
 
 
-article input.botaoTeste:hover, article input.botaoLista:hover {
+article input.botaoTeste:hover {
     background-color:var(--colorHighlight2Shadow);
     color: var(--color03);
     cursor: pointer;
@@ -142,13 +147,19 @@ article input.botaoTeste:hover, article input.botaoLista:hover {
 
 article input.botaoLista {
     font-size: 0.9em;
-    background-color: var(--colorHighlight2);
+    background-color: var(--colorHighlight1);
     color:var(--color05);
     border: none;
     padding: 5px;
     font-weight: 600;
     text-transform: uppercase;
-    border-bottom: 2px solid var(--colorHighlight2Shadow);
+    border-bottom: 2px solid var(--colorHighlight1Shadow);
+}
+
+article input.botaoLista:hover {
+    background-color:var(--colorHighlight1Shadow);
+    color: var(--color03);
+    cursor: pointer;
 }
 
 .codigo code, .comando code, .alinhadoEsq code {
