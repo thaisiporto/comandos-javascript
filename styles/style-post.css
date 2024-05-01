@@ -66,43 +66,6 @@ article a:hover {
     text-decoration: underline;
 }
 
-/* Listas */
-article ul, ol {
-    padding: 0 20px 0 30px;
-}
-
-article ul li, ol li {
-    font-size: 0.9em;
-    margin-bottom: 10px;
-    text-align: justify;
-}
-
-article ul li {
-    list-style-type: circle;
-}
-
-article ol li::marker {
-    color: var(--colorHighlight1);
-    font-weight: 700;
-    font-size: 14px;
-}
-
-article ul li span {
-    font-size: 12px;
-}
-
-
-
-article li span.destaque {
-    text-decoration: var(--colorHighlight1) underline;
-    font-size: 1em;
-}
-
-article li.subTopico {
-    list-style-type: disc;
-    margin-left: 15px;
-}
-
 /* Códigos e Comandos */
 article div.comando, div.alinhadoEsq {
     max-width: 100%;
@@ -122,7 +85,7 @@ article code {
     margin-right: 5px;
 }   
 
-p.resultado {
+p.resultado, span.resultado {
     text-align: center;
     background-color: var(--color05);
     color: var(--colorHighlight2);
@@ -170,10 +133,22 @@ article input.botaoTeste {
     border-bottom: 2px solid var(--colorHighlight2Shadow);
 }
 
-article input.botaoTeste:hover {
+
+article input.botaoTeste:hover, article input.botaoLista:hover {
     background-color:var(--colorHighlight2Shadow);
     color: var(--color03);
     cursor: pointer;
+}
+
+article input.botaoLista {
+    font-size: 0.9em;
+    background-color: var(--colorHighlight2);
+    color:var(--color05);
+    border: none;
+    padding: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--colorHighlight2Shadow);
 }
 
 .codigo code, .comando code, .alinhadoEsq code {
