@@ -66,10 +66,11 @@ function pizDoc() {
  }
 
  function mSqrt() {
-    let sqrtNumber = Math.sqrt(16);
+    let numberSqrt = window.document.querySelector("input#numberSqrt");
+    let sqrtNumber = Math.sqrt(numberSqrt.value);
     let mathSqrt = window.document.querySelector("span#mSqrt");
 
-    mathSqrt.innerHTML = "&nbsp; &nbsp" + sqrtNumber;
+    mathSqrt.innerHTML = "&nbsp; &nbsp" + sqrtNumber.toFixed(2);
  }
 
  function mRandom() {
