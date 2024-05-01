@@ -59,6 +59,45 @@
                 let pizzaDoce = new Pizza ("Brigadeiro", "Broto", "Chocolate");
             </code></p>
 
+            <h3>Objetos Embutidos</h3>
+            <p>Também chamados objetos nativos, podem ser atribuídos ao qualquer objeto criado sem a necessidade de uma configuração prévia, uma vez que já fazem parte da linguagem.</p>
+            <ul>
+                <li>
+                    <strong><code>Math</code></strong> efetua operações matemáticas em objetos no tipo <code>number</code>. É possível atribuir propriedades e métodos ao objeto <code>Math</code>.
+                    <p>
+                        <ul>
+                            <li>
+                                <code><strong>Math.round(9.7);</strong></code> retorna o número inteiro mais próximo. &nbsp;
+                                <input type="button" value="Executar" onclick="mRound()" class="botaoLista"><span class="resultado"  id="mRound"></span>
+                            </li>
+                            <li>
+                                <code><strong>Math.ceil(9.1);</strong></code> rarredonda o número para cima. &nbsp;
+                                <input type="button" value="Executar" onclick="mCeil()" class="botaoLista"><span class="resultado"  id="mCeil"></span>
+                            </li>                            <li>
+                                <code><strong>Math.floor(10.9);</strong></code> arredonda o número para baixo. &nbsp;
+                                <input type="button" value="Executar" onclick="mFloor()" class="botaoLista"><span class="resultado"  id="mFloor"></span>
+                            </li>                            <li>
+                                <code><strong>Math.pow(5, 2);</strong></code> releva o primeiro número entre parênteses a potência definida no segundo número (separados por vírgula). &nbsp;
+                                <input type="button" value="Executar" onclick="mPow()" class="botaoLista"><span class="resultado"  id="mPow"></span>
+                            </li>                            <li>
+                                <code><strong>Math.sqrt( <input type="number" id="numberSqrt" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;"> );</strong></code>  retorna a raiz quadrada. &nbsp;
+                                <input type="button" value="Executar" onclick="mSqrt()" class="botaoLista"><span class="resultado"  id="mSqrt"></span>
+                            </li>                            <li>
+                                <code><strong>Math.random();</strong></code> retorna um número (pseudo) aleatório entre 0 e 1, com casas decimais. &nbsp;
+                                <input type="button" value="Executar" onclick="mRandom()" class="botaoLista"><span class="resultado"  id="mRandom"></span>
+                                <p>É possível utilizar métodos em conjunto. No exemplo acima foi utilizado o método <code>Math.random()<strong>.toFixed(5)</strong></code> para retornar apenas 5 casas decimais.</p>
+                                <p>Também podemos usar métodos de arredondamento e operadores aritméticos para configurar o método random. Por exemplo:</p>
+                                <p><code>Math.round(Math.random() * 10) + 1;</code><input type="button" value="Executar" onclick="mRandomInteiro()" class="botaoLista"><span class="resultado"  id="mRandomInteiro"></span></p>
+                                <p>Nesse exemplo, utilizamos o <code>Math.round()</code> para arredondar o resultado, o operador <code> *</code> para definir um teto e o operador <code> +</code> para configurar em qual número deve começar. Em outras palavras, o resultado retornado deve ser um <strong>número inteiro de 1 a 10</strong>.</p>
+                            </li>
+                            <li><a href="https://www.w3schools.com/jsref/jsref_obj_math.asp" target="_blank">Lista completa de métodos e propriedades do objeto Math – W3Schools.
+                            </a></li>
+                        </ul>
+                    </p>
+                </li>
+                <li><code><strong>Date</strong></code></li>
+            </ul>
+
             <h2>Propriedades</h2>
             <p>As propriedades, como visto acima, são as características/atributos de um objeto. As propriedades são constituídas de um nome (também chamado de chave) e um valor, podendo ser qualquer tipo de dado JavaScript, como um string, número e até uma função (nesse caso o valor passa a se chamar método).</p>
 
