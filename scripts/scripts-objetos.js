@@ -34,3 +34,55 @@ function pizDoc() {
         
     pedido3.innerHTML = pizza.fazerPedido();        
  }
+
+ // MATH
+
+ function mRound() {
+    let roundNumber = Math.round(9.7);
+    let mathRound = window.document.querySelector("span#mRound");
+
+    mathRound.innerHTML = "&nbsp; &nbsp" + roundNumber;
+ }
+
+ function mCeil() {
+    let ceilNumber = Math.ceil(9.1);
+    let mathCeil = window.document.querySelector("span#mCeil");
+
+    mathCeil.innerHTML = "&nbsp; &nbsp" + ceilNumber;
+ }
+
+ function mFloor() {
+    let floorNumber = Math.floor(10.1);
+    let mathFloor = window.document.querySelector("span#mFloor");
+
+    mathFloor.innerHTML = "&nbsp; &nbsp" + floorNumber;
+ }
+
+ function mPow() {
+    let powNumber = Math.pow(5, 2);
+    let mathPow = window.document.querySelector("span#mPow");
+
+    mathPow.innerHTML = "&nbsp; &nbsp" + powNumber;
+ }
+
+ function mSqrt() {
+    let sqrtNumber = Math.sqrt(16);
+    let mathSqrt = window.document.querySelector("span#mSqrt");
+
+    mathSqrt.innerHTML = "&nbsp; &nbsp" + sqrtNumber;
+ }
+
+ function mRandom() {
+    let randomNumber = Math.random().toFixed(5);
+    let mathRandom = window.document.querySelector("span#mRandom");
+
+    mathRandom.innerHTML = "&nbsp; &nbsp" + randomNumber;
+ }
+
+
+ function mRandomInteiro() {
+    let randomIntegerNumber = Math.round(Math.random() * 10) + 1;
+    let mathRandomInteiro = window.document.querySelector("span#mRandomInteiro");
+
+    mathRandomInteiro.innerHTML = "&nbsp; &nbsp" + randomIntegerNumber;
+ }
