@@ -64,6 +64,47 @@ main {
     margin: auto;
 }
 
+/* LISTAS */
+article ul, ol {
+    padding: 0 20px 0 30px;
+}
+
+article ul li, ol li {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+article ul li {
+    list-style-type: circle;
+}
+
+article ul li>ul li {
+    list-style-type: square;
+}
+
+article ol li::marker {
+    color: var(--colorHighlight1);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+article ul li span {
+    font-size: 12px;
+}
+
+article li span.destaque {
+    text-decoration: var(--colorHighlight1) underline;
+    font-size: 1em;
+}
+
+article li.subTopico {
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
+/* TEXTO */ 
+
 p.codeCenter {
     text-align: center;
 }
