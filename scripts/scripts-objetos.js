@@ -59,18 +59,26 @@ function pizDoc() {
  }
 
  function mPow() {
-    let powNumber = Math.pow(5, 2);
-    let mathPow = window.document.querySelector("span#mPow");
+   let powNumber1 = window.document.querySelector("input#numberPow1");
+   let powNumber2 = window.document.querySelector("input#numberPow2");
+   let powNumber = Math.pow(powNumber1.value, powNumber2.value);
+   let mathPow = window.document.querySelector("span#mPow");
 
-    mathPow.innerHTML = "&nbsp; &nbsp" + powNumber;
+   mathPow.innerHTML = "&nbsp; &nbsp" + powNumber;
  }
 
  function mSqrt() {
-    let numberSqrt = window.document.querySelector("input#numberSqrt");
-    let sqrtNumber = Math.sqrt(numberSqrt.value);
-    let mathSqrt = window.document.querySelector("span#mSqrt");
+   let numberSqrt = window.document.querySelector("input#numberSqrt");
+   let sqrtNumber = Math.sqrt(numberSqrt.value);
+   let mathSqrt = window.document.querySelector("span#mSqrt");
+   
+   if (Number.isInteger(sqrtNumber)) {
+      sqrtNumber = sqrtNumber.toFixed(0);
+   } else {
+      sqrtNumber = sqrtNumber.toFixed(1);
+   }
 
-    mathSqrt.innerHTML = "&nbsp; &nbsp" + sqrtNumber.toFixed(1);
+   mathSqrt.innerHTML = "&nbsp; &nbsp" + sqrtNumber;
  }
 
  function mRandom() {
@@ -86,4 +94,26 @@ function pizDoc() {
     let mathRandomInteiro = window.document.querySelector("span#mRandomInteiro");
 
     mathRandomInteiro.innerHTML = "&nbsp; &nbsp" + randomIntegerNumber;
+ }
+
+ function firstDate() {
+   let primeiraData = window.document.querySelector("span#firstDate");
+   let data1 = new Date();
+
+   primeiraData.innerHTML = `Hoje é <span style="color:#d3a10b; font-size:1em;">${data1}</span>!`;
+ }
+
+function secondDate() {
+   let segundaData = window.document.querySelector("span#secondDate");
+   let data2 = new Date("1977-10-7");
+
+   segundaData.innerHTML = data2;
+ }
+
+ function diaDoMes() {
+   let monthDay = window.document.querySelector("p#diaDoMes");
+   const data3 = new Date();
+   let dia = data3.getDate();
+
+   monthDay.innerHTML = `Hoje é dia <span style="color:#d3a10b; font-size:1em;">${dia}</span>!`;
  }
