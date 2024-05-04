@@ -106,9 +106,9 @@
                             <input type="button" value="Executar" onclick="firstDate()" class="botaoLista"></p>
                         </li>
                         <li><code><strong>Date("ano-mês-dia")</strong></code> retorna uma data fixa. O resultado, como no exemplo anterior, é uma data completa.
-                            <p><code>let aniversario = new Date("1977-10-7")</code></p>
-                            <p><span class="resultado"  id="secondDate"></span><br>
-                            <input type="button" value="Executar" onclick="secondDate()" class="botaoLista"></p>
+                            <p><code>let aniversario = new Date("<input type="number" id="numberAno" placeholder="ano" max="2024" min="1970" class="inputNumbers" >-<input type="number" id="numberMes" max="12" min="1" placeholder="mês" class="inputNumbers" >-<input type="number" id="numberDia" placeholder="dia" class="inputNumbers" max="31" min="1">)"</code></p>
+                            <p><span class="resultado"  id="secondDate"></span></p>
+                            <p><input type="button" value="Executar" onclick="secondDate()" class="botaoLista"></p>
                         </li>
                         <li><code><strong>getDate()</strong></code> retorna o dia do mês, seja da data atual ou da data configurada através de uma string.
                             <p><code>
