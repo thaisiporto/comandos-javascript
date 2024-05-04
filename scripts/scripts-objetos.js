@@ -105,7 +105,11 @@ function pizDoc() {
 
 function secondDate() {
    let segundaData = window.document.querySelector("span#secondDate");
-   let data2 = new Date("1977-10-7");
+   let numberAno = window.document.querySelector("input#numberAno");
+   let numberMes = window.document.querySelector("input#numberMes");
+   let numberDia = window.document.querySelector("input#numberDia");
+   // Convert
+   let data2 = new Date(`${numberAno.value}-${numberMes.value}-${numberDia.value}`)
 
    segundaData.innerHTML = data2;
  }
