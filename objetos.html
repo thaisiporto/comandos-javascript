@@ -77,15 +77,15 @@
                                 <code><strong>Math.floor(10.9);</strong></code> arredonda o número para baixo. &nbsp;
                                 <input type="button" value="Executar" onclick="mFloor()" class="botaoLista"><span class="resultado"  id="mFloor"></span>
                             </li>                            <li>
-                                <code><strong>Math.pow(5, 2);</strong></code> releva o primeiro número entre parênteses a potência definida no segundo número (separados por vírgula). &nbsp;
+                                <code><strong>Math.pow(<input type="number" id="numberPow1" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">, <input type="number" id="numberPow2" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</strong></code> releva o primeiro número entre parênteses a potência definida no segundo número (separados por vírgula). &nbsp;
                                 <input type="button" value="Executar" onclick="mPow()" class="botaoLista"><span class="resultado"  id="mPow"></span>
                             </li>                            <li>
-                                <code><strong>Math.sqrt( <input type="number" id="numberSqrt" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers"> );</strong></code>  retorna a raiz quadrada. &nbsp;
+                                <code><strong>Math.sqrt(<input type="number" id="numberSqrt" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</strong></code>  retorna a raiz quadrada. &nbsp;
                                 <input type="button" value="Executar" onclick="mSqrt()" class="botaoLista"><span class="resultado"  id="mSqrt"></span>
                             </li>                            <li>
                                 <code><strong>Math.random();</strong></code> retorna um número (pseudo) aleatório entre 0 e 1, com casas decimais. &nbsp;
                                 <input type="button" value="Executar" onclick="mRandom()" class="botaoLista"><span class="resultado"  id="mRandom"></span>
-                                <p>É possível utilizar métodos em conjunto. No exemplo acima foi utilizado o método <code>Math.random()<strong>.toFixed(5)</strong></code> para retornar apenas 5 casas decimais.</p>
+                                <p>É possível utilizar métodos em conjunto. No exemplo acima foi utilizado o método <code>Math.random()<strong>.toFixed(5)</strong></code> para retornar apenas 5 casas decimais, contudo método <code>toFixed()</code> retorna uma string, é possível converte-la através do método <code>Number()</code>.</p>
                                 <p>Também podemos usar métodos de arredondamento e operadores aritméticos para configurar o método random. Por exemplo:</p>
                                 <p><code>Math.round(Math.random() * 10) + 1;</code><input type="button" value="Executar" onclick="mRandomInteiro()" class="botaoLista"><span class="resultado"  id="mRandomInteiro"></span></p>
                                 <p>Nesse exemplo, utilizamos o <code>Math.round()</code> para arredondar o resultado, o operador <code> *</code> para definir um teto e o operador <code> +</code> para configurar em qual número deve começar. Em outras palavras, o resultado retornado deve ser um <strong>número inteiro de 1 a 10</strong>.</p>
@@ -95,7 +95,33 @@
                         </ul>
                     </p>
                 </li>
-                <li><code><strong>Date</strong></code></li>
+
+                <li><code><strong>Date</strong></code> é utilizado quando se trabalha com datas e horas. É possível atribuir métodos ao objeto Date.
+                    <p>O construtor desse objeto consiste na palavra chave <code>new</code> e o método <code>Date()</code>.</p>
+                    <ul>
+                        <li><code><strong>Date()</strong></code> sem demais configurações, retorna a data atual completa, com dia da semana, mês, dia, ano, horário (com horas, minutos e segundos) e fuso horário.
+                            <p><code>let data = new Date();</code><br>
+                            <code>console.log(`Hoje é ${<strong>data</strong>}´);</code></p>
+                            <p><span class="resultado"  id="firstDate"></span><br>
+                            <input type="button" value="Executar" onclick="firstDate()" class="botaoLista"></p>
+                        </li>
+                        <li><code><strong>Date("ano-mês-dia")</strong></code> retorna uma data fixa. O resultado, como no exemplo anterior, é uma data completa.
+                            <p><code>let aniversario = new Date("1977-10-7")</code></p>
+                            <p><span class="resultado"  id="secondDate"></span><br>
+                            <input type="button" value="Executar" onclick="secondDate()" class="botaoLista"></p>
+                        </li>
+                        <li><code><strong>getDate()</strong></code> retorna o dia do mês, seja da data atual ou da data configurada através de uma string.
+                            <p><code>
+                                const data = newDate();<br>
+                                let dia = data.getDate();<br>
+                                console.log(`Hoje é dia ${<strong>dia</strong>}!´);</code>
+                            </p>
+                            <p class="resultado" id="diaDoMes"></p>
+                            <p><input type="button" value="Executar" onclick="diaDoMes()" class="botaoLista"></p>
+                        </li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">Lista</a></li>
+                    </ul>
+                </li>
             </ul>
 
             <h2>Propriedades</h2>
