@@ -115,13 +115,14 @@ article p.hideTeste {
     display: none;
 }
 
-article input[type="number"], input[type="text"], select {
-    height: 30px;
+article input[type="number"], input[type="text"], select, input[type="date"] {
+    height: 25px;
     padding: 5px;
     border: 1px solid #ccc;
     border-bottom: 2px solid #ccc;
     margin: 5px;
 }
+
 
 article input.inputNumbers {
     height: 20px;
