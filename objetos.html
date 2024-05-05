@@ -67,18 +67,21 @@
                     <p>
                         <ul>
                             <li>
-                                <code><strong>Math.round(9.7);</strong></code> retorna o número inteiro mais próximo. &nbsp;
-                                <input type="button" value="Executar" onclick="mRound()" class="botaoLista"><span class="resultado"  id="mRound"></span>
+                                <code><strong>Math.round(<span id="roundInteiro">inteiro</span>.<span id="roundDecimal">decimal</span>);</strong></code> arredonda números decimais, separados por <code>.</code> ao invés de vírgula. Retorna o número inteiro mais próximo.
+                                <p><code>Math.round(<input type="number" id="numberRound1" onkeydown="if (this.value.length == 1 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">.<input type="number" id="numberRound2" onkeydown="if (this.value.length == 2 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</code></p>
+                                <p><input type="button" value="Executar" onclick="mRound()" class="botaoLista"><span class="resultado"  id="mRound"></span></p>
                             </li>
                             <li>
-                                <code><strong>Math.ceil(9.1);</strong></code> rarredonda o número para cima. &nbsp;
+                                <code><strong>Math.ceil(<span id="ceilInteiro">inteiro</span>.<span id="ceilDecimal">decimal</span>);</strong></code> arredonda o número sempre para cima, mesmo que a casa decimal seja menor que n.5.
+                                <p><code>Math.ceil(<input type="number" id="numberCeil1" onkeydown="if (this.value.length == 1 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">.<input type="number" id="numberCeil2" onkeydown="if (this.value.length == 2 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</code></p>
                                 <input type="button" value="Executar" onclick="mCeil()" class="botaoLista"><span class="resultado"  id="mCeil"></span>
                             </li>                            <li>
-                                <code><strong>Math.floor(10.9);</strong></code> arredonda o número para baixo. &nbsp;
+                                <code><strong>Math.floor(<span id="floorInteiro">inteiro</span>.<span id="floorDecimal">decimal</span>);</strong></code> arredonda o número sempre para baixo, mesmo que a casa decimal seja maior que n.5.
+                                <p><code>Math.floor(<input type="number" id="numberFloor1" onkeydown="if (this.value.length == 1 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">.<input type="number" id="numberFloor2" onkeydown="if (this.value.length == 2 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</code></p>
                                 <input type="button" value="Executar" onclick="mFloor()" class="botaoLista"><span class="resultado"  id="mFloor"></span>
                             </li>                            <li>
-                                <code><strong>Math.pow(<input type="number" id="numberPow1" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">, <input type="number" id="numberPow2" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</strong></code> releva o primeiro número entre parênteses a potência definida no segundo número (separados por vírgula). &nbsp;
-                                <input type="button" value="Executar" onclick="mPow()" class="botaoLista"><span class="resultado"  id="mPow"></span>
+                                <code><strong>Math.pow(<input type="number" id="numberPow1" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">, <input type="number" id="numberPow2" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</strong></code> eleva o primeiro número entre parênteses a potência definida no segundo número (separados por vírgula).
+                                <p><input type="button" value="Executar" onclick="mPow()" class="botaoLista"><span class="resultado"  id="mPow"></span></p>
                             </li>                            <li>
                                 <code><strong>Math.sqrt(<input type="number" id="numberSqrt" onkeydown="if (this.value.length == 3 && event.key != 'Backspace' && event.key != 'Delete') return false;" class="inputNumbers">);</strong></code>  retorna a raiz quadrada. &nbsp;
                                 <input type="button" value="Executar" onclick="mSqrt()" class="botaoLista"><span class="resultado"  id="mSqrt"></span>
@@ -87,8 +90,8 @@
                                 <input type="button" value="Executar" onclick="mRandom()" class="botaoLista"><span class="resultado"  id="mRandom"></span>
                                 <p>É possível utilizar métodos em conjunto. No exemplo acima foi utilizado o método <code>Math.random()<strong>.toFixed(5)</strong></code> para retornar apenas 5 casas decimais, contudo método <code>toFixed()</code> retorna uma string, é possível converte-la através do método <code>Number()</code>.</p>
                                 <p>Também podemos usar métodos de arredondamento e operadores aritméticos para configurar o método random. Por exemplo:</p>
-                                <p><code>Math.round(Math.random() * 10) + 1;</code><input type="button" value="Executar" onclick="mRandomInteiro()" class="botaoLista"><span class="resultado"  id="mRandomInteiro"></span></p>
-                                <p>Nesse exemplo, utilizamos o <code>Math.round()</code> para arredondar o resultado, o operador <code> *</code> para definir um teto e o operador <code> +</code> para configurar em qual número deve começar. Em outras palavras, o resultado retornado deve ser um <strong>número inteiro de 1 a 10</strong>.</p>
+                                <p><code>Math.ceil(Math.random() * 10);</code><input type="button" value="Executar" onclick="mRandomInteiro()" class="botaoLista"><span class="resultado"  id="mRandomInteiro"></span></p>
+                                <p>Nesse exemplo, utilizamos o <code>Math.ceil()</code> para arredondar o resultado para cima e o operador <code> *</code> para definir um teto. Também é possível utilizar <code>Math.floor()</code>, mas nesse caso, seria necessário adicionar também e o operador <code> +1</code> para configurar em qual número deve começar. De qualquer forma, o resultado retornado deve ser um <strong>número inteiro de 1 a 10</strong>.</p>
                             </li>
                             <li><a href="https://www.w3schools.com/jsref/jsref_obj_math.asp" target="_blank">Lista completa de métodos e propriedades do objeto Math – W3Schools.
                             </a></li>
@@ -106,7 +109,8 @@
                             <input type="button" value="Executar" onclick="firstDate()" class="botaoLista"></p>
                         </li>
                         <li><code><strong>Date("ano-mês-dia")</strong></code> retorna uma data fixa. O resultado, como no exemplo anterior, é uma data completa.
-                            <p><code>let aniversario = new Date("<input type="number" id="numberAno" placeholder="ano" max="2024" min="1970" class="inputNumbers" >-<input type="number" id="numberMes" max="12" min="1" placeholder="mês" class="inputNumbers" >-<input type="number" id="numberDia" placeholder="dia" class="inputNumbers" max="31" min="1">)"</code></p>
+                            <p><code>let data = new Date("<span id="numberAno">Ano</span>-<span id="numberMes">Mês</span>-<span id="numberDia">Dia</span>");</code></p>
+                            <p>Selecione uma data: &nbsp; &nbsp;<input type="date" id="idata"></p>
                             <p><span class="resultado"  id="secondDate"></span></p>
                             <p><input type="button" value="Executar" onclick="secondDate()" class="botaoLista"></p>
                         </li>
