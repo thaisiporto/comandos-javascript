@@ -79,8 +79,13 @@ article ul li {
     list-style-type: circle;
 }
 
+article ul li>ul {
+    padding: 10px;
+}
+
 article ul li>ul li {
     list-style-type: square;
+    padding: 0;
 }
 
 article ol li::marker {
@@ -90,7 +95,7 @@ article ol li::marker {
 }
 
 article ul li span {
-    font-size: 12px;
+    font-size: 1em;
 }
 
 article li span.destaque {
