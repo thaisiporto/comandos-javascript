@@ -31,12 +31,14 @@ article {
     box-sizing: border-box;
 }
 
-/* Textos */article h1 {
+/* Textos */
+article h1 {
     background-color: var(--colorHighlight1);
     padding: 10px 30px;
     font-size: 24px;
     color: var(--color05);
     text-transform: uppercase;
+    text-align: left;
 }
 article h2 {
     color: var(--colorHighlight2);
@@ -53,13 +55,13 @@ article h1:hover::after, main h2:hover::after, main h3:hover::after {
 }
 article p {
     font-size: 14px;
-    padding: 10px;
+    padding: 10px 0;
     text-align: justify;
 }
 article a {
     color: var(--color02);
     text-decoration: none;
-    font-size: 12px;
+    font-size: 1em;
     font-weight: 600;
 }
 article a:hover {
