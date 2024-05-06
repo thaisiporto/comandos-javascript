@@ -195,4 +195,56 @@ function nomeDia() {
   nomeDay.innerHTML = `Hoje é <span style="color:#d3a10b;">${nomeDoDia}</span>!`;
 }
 
+function diaCompleto() {
+   const dataAll = new Date();
+   let dia = dataAll.getDate();
+   let mes = dataAll.getMonth()+1;
+   let ano = dataAll.getFullYear();
+   let hora = dataAll.getHours();
+   let minutos = dataAll.getMinutes();
+
+   switch(mes) {
+      case 1:
+         var nomeDoMes = "Janeiro";
+         break
+      case 2:
+         var nomeDoMes = "Fevereiro";
+         break
+      case 3:
+         var nomeDoMes = "Março";
+         break
+      case 4:
+         var nomeDoMes = "Abril";
+         break
+      case 5:
+         var nomeDoMes = "Maio";
+         break
+      case 6:
+         var nomeDoMes = "Junho";
+         break
+      case 7:
+         var nomeDoMes = "Julho";
+         break
+      case 8:
+         var nomeDoMes = "Agosto";
+         break
+      case 9:
+         var nomeDoMes = "Setembro";
+         break
+      case 10:
+         var nomeDoMes = "Outubro";
+         break
+      case 11:
+         var nomeDoMes = "Novembro";
+         break
+      case 12:
+         var nomeDoMes = "Dezembro";
+         break
+   }
+
+   let diaCompleto = window.document.querySelector("p#diaCompleto");
+
+   diaCompleto.innerHTML = `Hoje é dia <span style="color:#d3a10b;">${dia}</span> de <span style="color:#d3a10b;">${nomeDoMes}</span> de <span style="color:#d3a10b;">${ano}</span>. São <span style="color:#d3a10b;">${hora}</span> horas e <span style="color:#d3a10b;">${minutos}</span> minutos!`
+}
+
 
