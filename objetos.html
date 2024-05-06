@@ -124,7 +124,7 @@
                             <p><input type="button" value="Executar" onclick="diaDoMes()" class="botaoLista"></p>
                             <p class="resultado" id="diaDoMes"></p>
                         </li>
-                        <li><code><strong>getDay()</strong></code> retorna o dia da semana, de 0 a 6, sendo zero domingo e 6 sábado. 
+                        <li><code><strong>getDay()</strong></code> retorna o dia da semana, de 0 a 6, sendo zero, o domingo e 6, o sábado. 
                         <p>
                             <ol start="0">
                                 <li>Domingo</li>
@@ -170,11 +170,49 @@
                                     &nbsp; &nbsp; break &nbsp; <br>
                             } &nbsp; <br>
                         </code></p>
-                        <p><code> console.log(`Hoje é dia ${<strong>nomeDoDia</strong>}!´);</code></p>
+                        <p><code> console.log(`Hoje é ${<strong>nomeDoDia</strong>}!´);</code></p>
                         <p><input type="button" value="Executar" onclick="nomeDia()" class="botaoLista"></p>
                         <p class="resultado" id="nomeDia"></p>
                         </li>
-                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">Lista</a></li>
+                        <li><code><strong>getMonth()</strong></code> retorna o mês, de 0 a 11.
+                            <p>Assim como os dias da semana, também podem ser nomeados através de condicionais.</p>
+                            <ol start="0">
+                                <li>Janeiro</li>
+                                <li>Fevereiro</li>
+                                <li>Março</li>
+                                <li>Abril</li>
+                                <li>Maio</li>
+                                <li>Junho</li>
+                                <li>Julho</li>
+                                <li>Agosto</li>
+                                <li>Setembro</li>
+                                <li>Outubro</li>
+                                <li>Novembro</li>
+                                <li>Dezembro</li>
+                            </ol>
+                            Também possível utilizar o operador <code>+1</code> para retornar o mês exato segundo o calendário. </li>
+                        <li>
+                            <code><strong>getFullYear()</strong></code> retorna o ano completo, com 4 digítos.
+                        </li>
+                        <li>
+                            <code><strong>getHours()</strong></code> retorna as horas, de 0 a 23.
+                        </li>
+                        <li><code><strong>getMinutes()</strong></code> retorna os minutos, de 0 a 59.
+                            <p>
+                                <code>
+                                    const dataAll = new Date(); <br>
+                                    let dia = dataAll.<strong>getDate()</strong>; <br>
+                                    let mes = dataAll.<strong>getMonth()+1</strong>; <br>
+                                    let ano = dataAll.<strong>getFullYear()</strong>; <br>
+                                    let hora = dataAll.<strong>getHours()</strong>; <br>
+                                    let minutos = dataAll.<strong>getMinutes()</strong>; <br>
+                                </code>
+                            <strong></p></strong>
+                            <p><code> console.log(`Hoje é dia ${<strong>dia</strong>} de ${<strong>mes</strong>} de ${<strong>ano</strong>}. São ${<strong>hora</strong>} horas e ${<strong>minutos</strong>} minutos!´);</code></p>
+                            <p><input type="button" value="Executar" onclick="diaCompleto()" class="botaoLista"></p>
+                            <p class="resultado" id="diaCompleto"></p>
+                        </li>
+                        <li><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">Lista completa de métodos de data e hora – W3Schools</a></li>
                     </ul>
                 </li>
             </ul>
