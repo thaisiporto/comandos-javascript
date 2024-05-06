@@ -105,14 +105,15 @@
                         <li><code><strong>Date()</strong></code> sem demais configurações, retorna a data atual completa, com dia da semana, mês, dia, ano, horário (com horas, minutos e segundos) e fuso horário.
                             <p><code>let data = new Date();</code><br>
                             <code>console.log(`Hoje é ${<strong>data</strong>}´);</code></p>
-                            <p><span class="resultado"  id="firstDate"></span><br>
                             <input type="button" value="Executar" onclick="firstDate()" class="botaoLista"></p>
+                            <p><span class="resultado"  id="firstDate"></span><br>
                         </li>
                         <li><code><strong>Date("ano-mês-dia")</strong></code> retorna uma data fixa. O resultado, como no exemplo anterior, é uma data completa.
                             <p><code>let data = new Date("<span id="numberAno">Ano</span>-<span id="numberMes">Mês</span>-<span id="numberDia">Dia</span>");</code></p>
                             <p>Selecione uma data: &nbsp; &nbsp;<input type="date" id="idata"></p>
-                            <p><span class="resultado"  id="secondDate"></span></p>
                             <p><input type="button" value="Executar" onclick="secondDate()" class="botaoLista"></p>
+                            <p><span class="resultado"  id="secondDate"></span></p>
+
                         </li>
                         <li><code><strong>getDate()</strong></code> retorna o dia do mês, seja da data atual ou da data configurada através de uma string.
                             <p><code>
@@ -120,8 +121,58 @@
                                 let dia = data.getDate();<br>
                                 console.log(`Hoje é dia ${<strong>dia</strong>}!´);</code>
                             </p>
-                            <p class="resultado" id="diaDoMes"></p>
                             <p><input type="button" value="Executar" onclick="diaDoMes()" class="botaoLista"></p>
+                            <p class="resultado" id="diaDoMes"></p>
+                        </li>
+                        <li><code><strong>getDay()</strong></code> retorna o dia da semana, de 0 a 6, sendo zero domingo e 6 sábado. 
+                        <p>
+                            <ol start="0">
+                                <li>Domingo</li>
+                                <li>Segunda</li>
+                                <li>Terça</li>
+                                <li>Quarta</li>
+                                <li>Quinta</li>
+                                <li>Sexta</li>
+                                <li>Sábado</li>
+                            </ol>
+                        </p>
+                        <p><code>
+                            const data = new Date();<br>
+                            let diaSemana = data.getDay();<br>
+                            console.log(`Hoje é dia ${<strong>diaSemana</strong>}!´);</code>
+                        </code></p>
+                        <p><input type="button" value="Executar" onclick="diaDaSemana()" class="botaoLista"></p>
+                        <p class="resultado" id="diaDaSemana"></p>
+                        <p>É possível configurar variáveis e atribuir identificadores aos dias de acordo com seus respectivos nomes através de declarações condicionais. No exemplo abaixo é usado o método <code>switch</code>.</p>
+                        <p><a href="condicoes.html">> Como funcionam as condições.</a></p>
+                        <p><code>
+                            switch(diaSemana) { <br> &nbsp;
+                                case <strong>0</strong>:
+                                    var <strong> nomeDoDia = "Domingo";</strong>  &nbsp; <br>
+                                    &nbsp; &nbsp; break  &nbsp; <br>
+                                case <strong>1</strong>:
+                                    var <strong> nomeDoDia = "Segunda-Feira";</strong> &nbsp; <br>
+                                    &nbsp; &nbsp; break &nbsp; <br>
+                                case <strong>2</strong>:
+                                    var <strong> nomeDoDia = "Terça-Feira";</strong> &nbsp; <br>
+                                    &nbsp; &nbsp; break &nbsp; <br>
+                                case <strong>3</strong>:
+                                    var <strong> nomeDoDia = "Quarta-Feira";</strong> &nbsp; <br>
+                                    &nbsp; &nbsp; break
+                                case <strong>4</strong>:
+                                    var <strong> nomeDoDia = "Quinta-Feira";</strong> &nbsp; <br>
+                                    &nbsp; &nbsp; break &nbsp; <br>
+                                case <strong>5</strong>:
+                                    var <strong> nomeDoDia = "Sexta-Feira";</strong> &nbsp; <br>
+                                    &nbsp; &nbsp; break &nbsp; <br>
+                                case <strong>6</strong>:
+                                    var <strong> nomeDoDia = "Sábado";</strong> &nbsp; <br>
+                                    &nbsp; &nbsp; break &nbsp; <br>
+                            } &nbsp; <br>
+                        </code></p>
+                        <p><code> console.log(`Hoje é dia ${<strong>nomeDoDia</strong>}!´);</code></p>
+                        <p><input type="button" value="Executar" onclick="nomeDia()" class="botaoLista"></p>
+                        <p class="resultado" id="nomeDia"></p>
                         </li>
                         <li><a href="https://www.w3schools.com/jsref/jsref_obj_date.asp" target="_blank">Lista</a></li>
                     </ul>
