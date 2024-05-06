@@ -69,6 +69,15 @@ article ul, ol {
     padding: 0 20px 0 30px;
 }
 
+@media screen and (max-width: 650px) {
+    article ul, ol {
+        padding: 0 20px;
+    }
+    article ul li>ul {
+        padding: 15px;
+    }
+}
+
 article ul li, ol li {
     font-size: 0.9em;
     margin-bottom: 10px;
@@ -86,12 +95,17 @@ article ul li>ul {
 article ul li>ul li {
     list-style-type: square;
     padding: 0;
+    font-size: 1em;
 }
 
 article ol li::marker {
     color: var(--colorHighlight1);
     font-weight: 700;
-    font-size: 14px;
+}
+
+article ul li>ol li {
+    list-style-type: decimal;
+    font-size: 1em;
 }
 
 article ul li span {
