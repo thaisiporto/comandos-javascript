@@ -155,7 +155,44 @@ function secondDate() {
    let dia = data3.getDate();
 
    monthDay.innerHTML = `Hoje é dia <span style="color:#d3a10b;">${dia}</span>!`;
- }
+}
 
+//DIAS DA SEMANA
+let weekDay = window.document.querySelector("p#diaDaSemana");
+var nomeDay = window.document.querySelector("p#nomeDia");
+
+var data4 = new Date();
+var diaSemana = data4.getDay();
+
+function diaDaSemana() {
+   weekDay.innerHTML = `Hoje é <span style="color:#d3a10b;">${diaSemana}</span>!`;
+}
+
+function nomeDia() {
+   switch(diaSemana) {
+      case 0:
+         var nomeDoDia = "Domingo";
+         break
+      case 1:
+         var nomeDoDia = "Segunda-Feira";
+         break
+      case 2:
+         var nomeDoDia = "Terça-Feira";
+         break
+      case 3:
+         var nomeDoDia = "Quarta-Feira";
+         break
+      case 4:
+         var nomeDoDia = "Quinta-Feira";
+         break
+      case 5:
+         var nomeDoDia = "Sexta-Feira";Da
+         break
+      case 6:
+         var nomeDoDia = "Sábado";
+         break
+   }
+  nomeDay.innerHTML = `Hoje é <span style="color:#d3a10b;">${nomeDoDia}</span>!`;
+}
 
 
