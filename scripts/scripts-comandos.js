@@ -66,8 +66,7 @@ function textoNormal() {
 // Contar caracteres
 function contarLetras () {
     var palavra = window.document.getElementById("iTextoTamanho").value;
-    var semEspaco = palavra.replace(/ /g,"");
-    var letras = semEspaco.length;
+    var letras = palavra.trim().length;
 
     window.document.getElementById("letrasContadas").innerText = `O texto ${palavra} tem ${letras} letras.`;
 }
