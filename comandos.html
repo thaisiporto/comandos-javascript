@@ -67,6 +67,17 @@
             </div>
             <span id="metodos"></span>
             <div class="comando">
+                <p><code>texto.length;</code></p>
+                <p>Conta quantos caracteres o texto possui, contabilizando também os possíveis espaços no começo e final do texto.</p>
+                <p>É possível utilizar o método <code>trim()</code> para que os espaços nas extremidades do texto não sejam contados (porém espaços no meio do texto ainda são entendidos como caracteres).</p>
+
+                <p><code>texto.trim().length;</code></p>
+                <input type="text" name="textoTamanho" id="iTextoTamanho" placeholder="Digite um texto" maxlength="35">
+                <input type="button" value="Enviar" onclick="contarLetras()" class="botaoTeste">
+
+                <p id="letrasContadas" class="pDeTestes" onclick="quantasLetras()">Quantas letras o texto tem?</p>
+            </div>
+            <div class="comando">
                 <p><code>texto.toUpperCase();</code></p>
                 <p><code>texto.toLowerCase();</code></p>
                 <p>Transforma o texto em maiúsculas ou minúsculas (respectivamente).</p>
@@ -78,15 +89,13 @@
             </div>
 
             <div class="comando">
-                <p><code>texto.length;</code></p>
-                <p>Conta quantos caracteres o texto possui, contabilizando também os possíveis espaços no começo e final do texto.</p>
-                <p>É possível utilizar o método <code>trim()</code> para que os espaços nas extremidades do texto não sejam contados (porém espaços no meio do texto ainda são entendidos como caracteres).</p>
+                <p><code>texto.repeat(<strong>3</strong>);</code></p>
+                <p>Retorna a quantidade definida de cópias do texto, no caso de exemplo acima, o texto irá se repetir 3 vezes. Não altera o texto original, gera uma nova string.</p>
 
-                <p><code>texto.trim().length;</code></p>
-                <input type="text" name="textoTamanho" id="iTextoTamanho" placeholder="Digite um texto" maxlength="35">
-                <input type="button" value="Enviar" onclick="contarLetras()" class="botaoTeste">
-
-                <p id="letrasContadas" class="pDeTestes" onclick="quantasLetras()">Quantas letras o texto tem?</p>
+                <input type="text" id="repeatInput" placeholder="Digite um texto" maxlength="35">
+                <input type="button" value="Enviar" onclick="repeatButton()" class="botaoTeste">
+            
+                <p id="repeatText" class="pDeTestes" onclick="repeatText()">3x</p>
             </div>
         </article>
         <section id="menuItems">
