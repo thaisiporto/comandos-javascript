@@ -51,22 +51,30 @@ function voltarTexto() {
 
 // Mudar para maiúsculo ou minúsculo
 function maius() {
-    var bigCase = window.document.getElementById("maiusMinus").innerText;
+    let bigCase = window.document.getElementById("maiusMinus").innerText;
     window.document.getElementById("maiusMinus").innerText = bigCase.toUpperCase();
 }
 function minus() {
-    var smallCase = window.document.getElementById("maiusMinus").innerText;
+    var smallCase = window.document.getElementById("maiusMinus");
     window.document.getElementById("maiusMinus").innerText = smallCase.toLowerCase();
 }
 function textoNormal() {
-    var normalCase = window.document.getElementById("maiusMinus").innerText;
-    window.document.getElementById("maiusMinus").innerText = "Esse Texto Vai Se Transformar!"
+    var normalCase = window.document.getElementById("maiusMinus");
+    normalCase.innerHTML = "Esse Texto Vai Se Transformar!"
 }
 
 // Contar caracteres
 function contarLetras () {
-    var palavra = window.document.getElementById("iTextoTamanho").value;
-    var letras = palavra.trim().length;
+    let palavra = window.document.getElementById("iTextoTamanho").value;
+    let letras = palavra.trim().length;
 
-    window.document.getElementById("letrasContadas").innerText = `O texto ${palavra} tem ${letras} letras.`;
+    window.document.getElementById("letrasContadas").innerHTML = `O texto ${palavra} tem ${letras} letras.`;
+}
+
+// Contar caracteres
+function repeatButton () {
+    let palavra = window.document.querySelector("input#repeatInput").value + " ";
+    let repetindo3x = palavra.repeat(3);
+
+    window.document.querySelector("p#repeatText").innerHTML = repetindo3x;
 }
