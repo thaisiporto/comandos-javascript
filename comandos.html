@@ -40,7 +40,7 @@
             </div>
 
             <div class="comando">
-                <p><code>varName.style.color = "#3a4669";</code></p>
+                <p><code>texto.style.color = "#3a4669";</code></p>
                 <p>Muda a cor do texto do objeto.</p>
 
                 <p id="corTextoTeste" class="pDeTestes" onclick="voltarTextoCor()">Esse texto vai mudar de cor!</p>
@@ -48,7 +48,7 @@
             </div>
 
             <div class="comando">
-                <p><code>varName.style.background = "#3a4669";</code></p>
+                <p><code>texto.style.background = "#3a4669";</code></p>
                 <p>Muda a cor de fundo do elemento.</p>
 
                 <p id="corFundoTeste" class="pDeTestes" onclick="voltarFundo()">O fundo desse texto vai mudar de cor!</p>
@@ -56,7 +56,7 @@
             </div>
 
             <div class="comando">
-                <p><code>varName.innerText = "Mudou!";</code></p>
+                <p><code>texto.innerText = "Mudou!";</code></p>
                 <p>Adiciona ou muda o texto do objeto.</p>
 
                 <p id="mudandoTexto" class="pDeTestes" onclick="voltarTexto()">Esse texto vai mudar!</p>
@@ -65,10 +65,10 @@
                 <p><strong>innerText </strong>Acessa o texto sem as childs (sem formatação).<br>
                 <strong>innetHTML</strong> Acessa as tags de formatação.</p>
             </div>
-
+            <span id="metodos"></span>
             <div class="comando">
-                <p><code>varName.toUpperCase();</code></p>
-                <p><code>varName.toLowerCase();</code></p>
+                <p><code>texto.toUpperCase();</code></p>
+                <p><code>texto.toLowerCase();</code></p>
                 <p>Transforma o texto em maiúsculas ou minúsculas (respectivamente).</p>
 
                 <p id="maiusMinus" class="pDeTestes" onclick="textoNormal()">Esse Texto Vai Se Transformar!</p>
@@ -78,9 +78,11 @@
             </div>
 
             <div class="comando">
-                <p><code>varName.length;</code></p>
-                <p>Conta quantos caracteres o texto possui.</p>
+                <p><code>texto.length;</code></p>
+                <p>Conta quantos caracteres o texto possui, contabilizando também os possíveis espaços no começo e final do texto.</p>
+                <p>É possível utilizar o método <code>trim()</code> para que os espaços nas extremidades do texto não sejam contados (porém espaços no meio do texto ainda são entendidos como caracteres).</p>
 
+                <p><code>texto.trim().length;</code></p>
                 <input type="text" name="textoTamanho" id="iTextoTamanho" placeholder="Digite um texto" maxlength="35">
                 <input type="button" value="Enviar" onclick="contarLetras()" class="botaoTeste">
 
