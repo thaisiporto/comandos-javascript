@@ -185,14 +185,16 @@ article div.codigo {
 
 /* Imagens */
 
-article img {
+article img.full {
+    display: block;
+    margin: 15px auto;
     width: 100%;
 }
 
-article img.imagem50 {
+article img.imgSmaller {
     display: block;
     margin: 15px auto;
-    width: 50%;
+    max-width: 400px;
 }
 
 @media screen and (min-width:600px) {
