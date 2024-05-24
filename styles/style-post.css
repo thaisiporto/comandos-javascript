@@ -125,6 +125,9 @@ article input[type="number"], input[type="text"], select, input[type="date"] {
     margin: 5px;
 }
 
+select {
+    height: 40px;
+}
 
 article input.inputNumbers {
     height: 20px;
@@ -139,6 +142,7 @@ article input.botaoTeste {
     font-weight: 600;
     text-transform: uppercase;
     border-bottom: 2px solid var(--colorHighlight2Shadow);
+    text-align: center;
 }
 
 
