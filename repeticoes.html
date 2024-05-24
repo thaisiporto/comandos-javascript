@@ -21,21 +21,61 @@
             <p>São estruturas que permitem que a mesma tarefa seja executada repetidamente.</p>
             <p>A estrutura de controle mais simples é a <strong>sequência</strong>, nela as tarefas são executadas sequencialmente, linha a linha, bloco por bloco, até o final da estrutura.</p>
             <img class="imgSmaller" src="images/repeticoes-sequencia.png" alt="estrutura de repetição em sequência">
+            <p>Nesse tipo de estrutura, o bloco aparece no código repetidas vezes, tornando a tarefa trabalhosa e longa, além de limitar o número de repetições à quantidade de vezes que o bloco foi escrito.</p>
             <h2>Repetições em Looping ou Laço</h2>
             <p>Funciona parcialmente como as condições, um teste lógico é executado e o valor (verdadeiro ou falso) define se a próxima tarefa será executada.</p>
-            <p>No entanto, o comportamento após a execução da tarefa em uma repetição é diferente de uma condição, ao invés de seguir a sequência até o próximo bloco, em uma repetição o caminho volta para a expressão lógica que será testada novamente (em <em>looping</em> ou laço).</p>
-            <img class="imgSmaller" src="images/repeticao-com-variavel-de-controle.png" alt="">
-            <p>A tarefa será executada sempre <em><strong>enquanto</strong></em> o resultado da expressão for verdadeiro, uma vez que o resultado se apresentar falso, o laço de repetição se "quebra" e o fluxo continua para o bloco seguinte.</p>
-            <p><code>
-                let passos = 1;
+            <p>No entanto, o comportamento após a execução da tarefa em uma repetição é diferente de uma condição, ao invés de seguir a sequência até o próximo bloco, em uma repetição o caminho volta para a expressão lógica que será testada novamente (formando um <em>looping</em> ou laço).</p>
+            <figure>
+                <img class="imgSmaller" src="images/repeticao-teste-logico-inicio.png" alt="Estrutura de Repetição com Teste Lógico no Início">
+                <figcaption>Estrutura de controle com Teste Lógico no Início</figcaption>
+            </figure>
+            <p>A tarefa será executada <em><strong>enquanto</strong></em> o resultado da expressão for verdadeiro, uma vez que o resultado se apresentar falso, o laço de repetição se "quebra" e o fluxo continua para o bloco seguinte.</p>
 
-                while (passos <= 4) { <br>
-                    &nbsp; &nbsp; console.log("Passo " + passos) &nbsp;<br>
-                    &nbsp; &nbsp; passos++ &nbsp; <br>
+
+            <p>A declaração usada para criar um laço de repetição é formado pela palavra-chave <code>while</code> e uma condição (ou seja, um teste) entre parênteses.</p>
+            <p><code> while (condição) { &nbsp;<br>
+                &nbsp; &nbsp; bloco; &nbsp;<br>
+             } </code></p>
+
+            <p>Dentro das chaves vai o bloco a ser executado caso o teste seja verdadeiro.</p>
+            <p>O exemplo acima representa uma estrutura de repetição com <strong>teste lógico no ínicio</strong> da expressão, ou seja, a condição (teste) aparece antes e somente se for verdadeira, o bloco é executado.</p>
+            <p></p>
+            <p><code>let numeroPasso = 1;</code></p>
+            <p><code>
+                while (numeroPasso <= 4) { <br>
+                    &nbsp; &nbsp; console.log("Passo " + numeroPasso) &nbsp;<br>
+                    &nbsp; &nbsp; numeroPasso++ &nbsp; <br>
                 }
             </code></p>
-            <p class="codeCenter"><input type="button" value="Executar" onclick="whileRep()" class="botaoTeste"></p>
+            <p>Esse exemplo representa um contador de passos. A condição é que o bloco seja executado enquanto o contador for menor ou igual a 4. </p>
+            <p>O trecho <code>numeroPasso++</code> significa que o número atribuído ao passo recebe a ele mesmo + 1 (<code>numeroPasso = numeroPasso + 1</code>). Essa expressão serve para que cada vez que o bloco for executado, seja somado +1 ao contador.</p>
+
+            <p class="codeCenter"><input type="button" value="Executar Código" onclick="whileRep()" class="botaoTeste"></p>
             <p class="resultado" id="whileRep"></p>
+
+            <p>Existe também a estrutura com <strong>Teste Lógico no Final</strong>. Como o nome sugere, a condição aparece após o bloco, isso garante que ele será executado pelo menos uma vez, mesmo que o teste se apresente falso.</p>
+            <figure>
+                <img class="imgSmaller" src="images/repeticao-teste-logico-final.png" alt="Estrutura de Repetição com Teste Lógico no Final">
+                <figcaption>Estrutura de Repetição com Teste Lógico no Final</figcaption>
+            </figure>
+            <p>Para declarar esse tipo de repetição, deve-se utilizar a palavra-chave <code>do</code> seguido do bloco a ser executado, dentro de chaves. Após o fechamento dessa declaração, vem a palavra-chave <code>while</code> juntamente com a condição a ser testada.
+            <p><code> 
+                <strong>do</strong> { &nbsp; <br>
+                    &nbsp; &nbsp; bloco &nbsp; <br>
+                } <strong>while</strong> (condição)
+            </code></p>
+            <p>Adaptando o exemplo anterior, do contador de passos, para a estrutura com teste lógico no final da expressão, temos:</p>
+            <p><code>let numeroPasso = 1;</code></p>
+            <p><code>
+                do { &nbsp; <br>
+                    &nbsp; &nbsp; console.log("Passo " + numeroPasso) &nbsp;<br>
+                    &nbsp; &nbsp; numeroPasso++ &nbsp; <br>
+                } while (numeroPasso === 0)
+            </code></p>
+
+            <p class="codeCenter"><input type="button" value="Executar Código" onclick="doWhileRep()" class="botaoTeste"></p>
+            <p class="resultado" id="doWhileRep"></p>
+            <p>Consegue-se notar que mesmo a condição tendo sido forçada a ser falsa, o bloco foi executado por estar antes do teste, contudo o laço se "quebra" e o bloco não torna a se repetir.</p>
         </article>
         <!-- SIDEBAR MENU -->
         <section id="menuItems">
