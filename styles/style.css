@@ -132,4 +132,11 @@ p.codeCenter {
     color: var(--colorHighlight2);
 }
 
+figcaption {
+    font-size: 0.8em;
+    text-align: center;
+    color: var(--colorHighlight2);
+    margin-bottom: 20px;
+}
+
 
