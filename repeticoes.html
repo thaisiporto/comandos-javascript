@@ -27,10 +27,15 @@
             <img class="imgSmaller" src="images/repeticao-com-variavel-de-controle.png" alt="">
             <p>A tarefa será executada sempre <em><strong>enquanto</strong></em> o resultado da expressão for verdadeiro, uma vez que o resultado se apresentar falso, o laço de repetição se "quebra" e o fluxo continua para o bloco seguinte.</p>
             <p><code>
-                while(condição) { <br>
-                    &nbsp; &nbsp; <em>tarefa</em> <br>
+                let passos = 1;
+
+                while (passos <= 4) { <br>
+                    &nbsp; &nbsp; console.log("Passo " + passos) &nbsp;<br>
+                    &nbsp; &nbsp; passos++ &nbsp; <br>
                 }
             </code></p>
+            <p class="codeCenter"><input type="button" value="Executar" onclick="whileRep()" class="botaoTeste"></p>
+            <p class="resultado" id="whileRep"></p>
         </article>
         <!-- SIDEBAR MENU -->
         <section id="menuItems">
