@@ -22,15 +22,22 @@
             <p>A estrutura de controle mais simples é a <strong>sequência</strong>, nela as tarefas são executadas sequencialmente, linha a linha, bloco por bloco, até o final da estrutura.</p>
             <img src="images/repeticoes-sequencia.png" alt="estrutura de repetição em sequência">
             <p>Nesse tipo de estrutura, o bloco aparece no código repetidas vezes, tornando a tarefa trabalhosa e longa, além de limitar o número de repetições à quantidade de vezes que o bloco foi escrito.</p>
+            <p><code>
+                &nbsp;console.log("Erro 1");&nbsp;<br>
+                &nbsp;console.log("Erro 2");&nbsp;<br>
+                &nbsp;console.log("Erro 3");&nbsp;<br>
+                &nbsp;console.log("Erro 4");
+            </code></p>
+            <p class="codeCenter"><input type="button" value="Executar Código" onclick="seqRep()" class="botaoTeste"></p>
+            <p class="resultado" id="seqRep"></p>
             <h2>Repetições em Looping ou Laço</h2>
             <p>Funciona parcialmente como as condições, um teste lógico é executado e o valor (verdadeiro ou falso) define se a próxima tarefa será executada.</p>
             <p>No entanto, o comportamento após a execução da tarefa em uma repetição é diferente de uma condição, ao invés de seguir a sequência até o próximo bloco, em uma repetição o caminho volta para a expressão lógica que será testada novamente (formando um <em>looping</em> ou laço).</p>
             <figure>
-                <img src="images/repeticao-teste-logico-inicio.png" alt="Estrutura de Repetição com Teste Lógico no Início">
+                <img src="images/repeticao-teste-logico-inicio.png" alt="Diagrama da Estrutura de Repetição com Teste Lógico no Início">
                 <figcaption>Estrutura de controle com Teste Lógico no Início</figcaption>
             </figure>
             <p>A tarefa será executada <em><strong>enquanto</strong></em> o resultado da expressão for verdadeiro, uma vez que o resultado se apresentar falso, o laço de repetição se "quebra" e o fluxo continua para o bloco seguinte.</p>
-
 
             <p>A declaração usada para criar um laço de repetição é formado pela palavra-chave <code>while</code> e uma condição (ou seja, um teste) entre parênteses.</p>
             <p><code> while (condição) { &nbsp;<br>
@@ -55,7 +62,7 @@
 
             <p>Existe também a estrutura com <strong>Teste Lógico no Final</strong>. Como o nome sugere, a condição aparece após o bloco, isso garante que ele será executado pelo menos uma vez, mesmo que o teste se apresente falso.</p>
             <figure>
-                <img src="images/repeticao-teste-logico-final.png" alt="Estrutura de Repetição com Teste Lógico no Final">
+                <img src="images/repeticao-teste-logico-final.png" alt="Diagrama da Estrutura de Repetição com Teste Lógico no Final">
                 <figcaption>Estrutura de Repetição com Teste Lógico no Final</figcaption>
             </figure>
             <p>Para declarar esse tipo de repetição, deve-se utilizar a palavra-chave <code>do</code> seguido do bloco a ser executado, dentro de chaves. Após o fechamento dessa declaração, vem a palavra-chave <code>while</code> juntamente com a condição a ser testada.
@@ -65,17 +72,42 @@
                 } <strong>while</strong> (condição)
             </code></p>
             <p>Adaptando o exemplo anterior, do contador de passos, para a estrutura com teste lógico no final da expressão, temos:</p>
-            <p><code>let numeroPasso = 1;</code></p>
+            <p><code>let numeroTarefa = 1;</code></p>
             <p><code>
                 do { &nbsp; <br>
-                    &nbsp; &nbsp; console.log("Passo " + numeroPasso) &nbsp;<br>
-                    &nbsp; &nbsp; numeroPasso++ &nbsp; <br>
-                } while (numeroPasso === 0)
+                    &nbsp; &nbsp; console.log("Tarefa " + numeroTarefa) &nbsp;<br>
+                    &nbsp; &nbsp; numeroTarefa++ &nbsp; <br>
+                } while (numeroTarefa === 0)
             </code></p>
 
             <p class="codeCenter"><input type="button" value="Executar Código" onclick="doWhileRep()" class="botaoTeste"></p>
             <p class="resultado" id="doWhileRep"></p>
             <p>Consegue-se notar que mesmo a condição tendo sido falsa, o bloco foi executado por estar antes do teste, contudo o laço se "quebra" e o bloco não torna a se repetir.</p>
+
+            <h3>Estrutura de Repetição com Variável de Controle</h3>
+            <p>Esse modelo segue o mesmo princípio do while, ou seja, o teste é realizado antes da execução do bloco.</p>
+            <img src="images/repeticao-com-variavel-de-controle.png" alt="Diagrama da Estrutura de Repetição com Variável de Controle">
+            <p>Contudo a declaração é feita de modo diferente. É utilizada a palavra chave <code>for</code> seguida de uma declaração em três partes (expressões), separadas por <code>;</code>.</p>
+            <p><code>
+                for (<strong>INÍCIO</strong>; <strong>TESTE</strong>; <strong>INCREMENTO</strong>) { &nbsp; <br>
+                    &nbsp;&nbsp; bloco &nbsp; <br>
+                }
+            </code></p>
+            <ul>
+                <li><strong>Início: </strong>geralmente é composta por uma variável que inicializa um contador. Essa expressão é executada uma vez antes do bloco.</li>
+                <li><strong>Teste: </strong>é a condição que será avaliada. Caso o resultado seja verdadeiro, o laço prossegue.</li>
+                <li><strong>Incremento: </strong>é uma instrução que normalmente afetará a variável inicial, como um incremento (adição) ou um decremento (subtração). Essa expressão é executada toda vez após a execução do bloco.</li>
+            </ul>
+            <p><code>
+                for (let numeroMissao = 1; numeroMissao <= 4; numeroMissao++) { <br>
+                    &nbsp; &nbsp; console.log("Missão " + numeroMissao) &nbsp;<br>
+                }
+            </code></p>
+
+            <p class="codeCenter"><input type="button" value="Executar Código" onclick="forRep()" class="botaoTeste"></p>
+            <p class="resultado" id="forRep"></p>
+            
+            <p>Esse tipo de estrutura geralmente é utilizado quando se conhece limite das execuções do laço.</p>
         </article>
         <!-- SIDEBAR MENU -->
         <section id="menuItems">
